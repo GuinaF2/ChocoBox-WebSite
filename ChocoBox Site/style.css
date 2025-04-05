@@ -1,0 +1,26 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo e barra de pesquisa */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px;
+    border-bottom: 5px solid #f8f8f8; /* Borda inferior */
+}
+
+header label{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 1500px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os itens do menu */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 40px;
+}
