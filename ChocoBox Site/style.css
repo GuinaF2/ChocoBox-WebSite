@@ -167,10 +167,11 @@ nav a {
 
 /*pag paises*/
 
-.pontosReferencia .pontoTuristico {
-    display: flex;
+.pontoReferencia{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     flex-direction: column;
-    /* Organiza o texto em formato de coluna */
+    border: #007BFF solid 2px;
     font-size: 1rem;
     /* Tamanho da fonte */
     line-height: 1.6;
@@ -182,6 +183,15 @@ nav a {
     text-align: center;
     /* Centraliza o texto */
 }
+.pontoReferencia .pontoTuristico {
+    border: #007BFF solid 2px;
+}
+
+
+section .explicacaoInfo{
+    display: flex;
+   
+}
 
 figure {
     display: flex;
@@ -192,7 +202,7 @@ figure {
 
 figure img {
     display: flex;
-    width: 520px;
+    width: 500px;
     /* A imagem ocupa 100% da largura do contêiner */
     max-width: 800px;
     /* Largura máxima da imagem */
@@ -280,7 +290,7 @@ li {
     /* Apenas a imagem ativa será visível */
 }
 
-section {
+section .descricaopage{
     background-color: rgba(107, 112, 92, 0.8);
     /* Cor de fundo com transparência */
     font-size: 1.5rem;
@@ -498,3 +508,4 @@ footer .footer-social {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Sombra ao redor do contêiner */
 }
+
