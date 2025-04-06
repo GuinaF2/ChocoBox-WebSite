@@ -169,39 +169,37 @@ nav a {
 
 .pontoReferencia{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    flex-direction: column;
-    border: #007BFF solid 2px;
+    grid-template-columns: 1fr 1fr;
     font-size: 1rem;
-    /* Tamanho da fonte */
     line-height: 1.6;
-    /* Altura da linha */
     color: #333;
-    /* Cor do texto */
     margin: 0;
-    /* Remove margens extras */
     text-align: center;
-    /* Centraliza o texto */
-}
-.pontoReferencia .pontoTuristico {
-    border: #007BFF solid 2px;
 }
 
-
-section .explicacaoInfo{
-    display: flex;
-   
+figure .pontoTuristico {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
 }
+
 
 figure {
     display: flex;
     flex: 1;
     align-items: center;
-    /* Centraliza horizontalmente */
+
+}
+
+
+.explicacaoinfo {
+    display: grid;
+    grid-template-columns: max-content;
+    font-size: 0.5rem;
+    background-color: #FFE8D6;
 }
 
 figure img {
-    display: flex;
+    display: inline-block;
     width: 500px;
     /* A imagem ocupa 100% da largura do contêiner */
     max-width: 800px;
@@ -210,7 +208,7 @@ figure img {
     max-height: 800px;
     /* Altura máxima da imagem */
     border-radius: 8px;
-    border: #333 solid 2px;
+    border: #484848 solid 2px;
     /* Borda ao redor da imagem */
 }
 
