@@ -1,24 +1,21 @@
-// Seleciona o container que contém as imagens
-const imgsContainer = document.getElementById("img");
-// Seleciona todas as imagens dentro do container
-const imgs = document.querySelectorAll("#img img");
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".carrossel img");
+    let currentIndex = 0;
 
-// Índice que controla qual imagem está sendo exibida
-let idx = 0;
+    function showNextImage() {
+        // Remove a classe "active" da imagem atual
+        images[currentIndex].classList.remove("active");
 
-// Função que move o carrossel para a próxima imagem
-function carrossel() {
-    const imgWidth = imgs[0].clientWidth; // Calcula a largura de uma imagem dinamicamente
-    idx++; // Incrementa o índice para ir para a próxima imagem
-    if (idx >= imgs.length) {
-        idx = 0; // Reinicia o índice quando atingir o final
+        // Incrementa o índice para a próxima imagem
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Adiciona a classe "active" à próxima imagem
+        images[currentIndex].classList.add("active");
     }
-    // Move o container para a esquerda com base no índice e na largura da imagem
-    imgsContainer.style.transform = `translateX(${-idx * imgWidth}px)`;
-    imgsContainer.style.transition = "transform 0.5s ease-in-out"; // Adiciona uma transição suave
-}
 
-// Inicia o carrossel automaticamente após o carregamento da página
-window.addEventListener("load", () => {
-    setInterval(carrossel, 2000); // Troca de imagem a cada 2 segundos
+    // Define o intervalo para alternar as imagens a cada 3 segundos
+    setInterval(showNextImage, 3000);
+
+    // Inicializa a primeira imagem como ativa
+    images[currentIndex].classList.add("active");
 });
