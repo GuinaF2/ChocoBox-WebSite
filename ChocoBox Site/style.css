@@ -1,6 +1,8 @@
 body{
     display: grid;
     grid-template-columns: 1fr; /* Uma coluna */
+    background-color: #B7B7A4; /* Cor de fundo */
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
 }
 
 main{
@@ -14,15 +16,22 @@ header {
     justify-content: space-between; /* Espaço entre os itens */
     align-items: center; /* Alinha os itens verticalmente */
     padding: 10px 20px; /* Espaçamento interno */
-    background-color: #f8f8f8; /* Cor de fundo */
+    background-color: #6B705C; /* Cor de fundo */
     border-bottom: 2px solid #ccc; /* Linha inferior */
-
 }
 
 header .logo img {
     flex: 1; /* Faz a logo ocupar o espaço disponível */
     width: 100px; /* Define o tamanho da logo */
     height: auto; /* Mantém a proporção da imagem */
+}
+
+header .search{
+    flex: 1; /* Faz o label ocupar o espaço disponível */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #FFE8D6; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
 }
 
 header .search-bar {
@@ -49,18 +58,34 @@ header .orcamento {
 
 header .orcamento a {
     text-decoration: none; /* Remove o sublinhado */
-    color: #007BFF; /* Cor do link */
+    color: #CB997E; /* Cor do link */
     font-size: 16px; /* Tamanho da fonte */
     font-weight: bold; /* Deixa o texto em negrito */
     padding: 10px 15px; /* Espaçamento interno */
-    border: 2px solid #007BFF; /* Borda do link */
+    border: 2px solid #CB997E; /* Borda do link */
     border-radius: 5px; /* Bordas arredondadas */
     transition: background-color 0.3s, color 0.3s; /* Animação ao passar o mouse */
 }
 
 header .orcamento a:hover {
-    background-color: #007BFF; /* Fundo azul ao passar o mouse */
+    background-color: #CB997E; /* Fundo azul ao passar o mouse */
     color: #fff; /* Texto branco ao passar o mouse */
+}
+
+nav{
+    display: flex; /* Usa Flexbox para organizar os itens do menu */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+nav a{
+    text-decoration: none; /* Remove o sublinhado */
+    color: #795c34; /* Cor do link */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Animação ao passar o mouse */
 }
 
 .menu {
@@ -159,10 +184,10 @@ li {
 }
 
 section{
-    background-color: #CB997E;
+    background-color: rgba(107, 112, 92, 0.8); /* Cor de fundo com transparência */
     font-size: 1.5rem;
     font-family:monospace;
-    color: #210E27; /* Cor do texto */
+    color: #ffe8d6; /* Cor do texto */
     border-radius: 10px;
     text-align: center; /* Centraliza o texto */
 }
@@ -170,6 +195,7 @@ section h2{
     font-size: 2.5rem;
     font-weight: bold;
     margin: 20px 0; /* Espaçamento superior e inferior */  
+    color: #ffe8d6; /* Cor do texto */
 }
 
 .formulario {
@@ -177,7 +203,7 @@ section h2{
     flex-direction: column; /* Organiza os elementos em coluna */
     align-items: center; /* Centraliza os elementos horizontalmente */
     padding: 20px; /* Espaçamento interno */
-    background-color: #f8f8f8; /* Cor de fundo */
+    background-color: #CB997E; /* Cor de fundo */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
 }	
