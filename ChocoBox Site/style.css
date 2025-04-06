@@ -154,19 +154,21 @@ li {
     align-items: center; /* Alinha verticalmente */
     gap: 20px; /* Espaço entre o carrossel e o texto */
     margin: 20px 0; /* Espaçamento externo */
-    padding: 500px;
-    align-items: center;
+    align-items: center;  
+    margin-right: 60%;
+    border: #007BFF solid 2px; /* Borda ao redor do carrossel */
+    width: 100%; /* Largura total do contêiner */
 }
 
 .carrossel {
     flex: 1; /* O carrossel ocupa o espaço disponível */
-    max-width: auto; /* Largura máxima do carrossel */
+    max-width: 100%; /* Largura máxima do carrossel */
     height: 400px; /* Altura fixa */
     overflow: hidden; /* Esconde as imagens fora do contêiner */
     position: relative; /* Necessário para posicionar as imagens */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-   
+    
 }
 
 .carrossel img {
@@ -176,7 +178,8 @@ li {
     top: 0;
     left: 0;
     opacity: 0; /* Torna as imagens invisíveis por padrão */
-    transition: opacity 1s ease-in-out; /* Transição suave entre imagens */
+    transition: opacity 2s ease-in-out; /* Transição suave entre imagens */
+    image-rendering: pixelated; /* Melhora a qualidade da imagem */
 }
 
 .carrossel img.active {
@@ -217,7 +220,17 @@ footer{
     background-color: #f8f8f8; /* Cor de fundo */
     border-bottom: 2px solid #ccc; /* Linha inferior */
 }
+
+.linha {
+    display: flex; /* Usa Flexbox para organizar os itens do rodapé */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaço entre os itens */
+}
+
 .comentarios-clientes {
+    display: flex; /* Usa Flexbox para organizar os elementos */
+    flex: 1; /* O contêiner ocupa o espaço disponível */
     background-color: #f9f9f9; /* Fundo claro */
     padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
@@ -235,7 +248,7 @@ footer{
 .comentarios-clientes .comentario {
     margin-bottom: 15px; /* Espaçamento entre os comentários */
     padding: 10px;
-    border-left: 4px solid #007BFF; /* Barra de destaque à esquerda */
+    border-right: 4px solid #007BFF; /* Barra de destaque à esquerda */
     background-color: #fff; /* Fundo branco para os comentários */
     border-radius: 5px; /* Bordas arredondadas */
 }
