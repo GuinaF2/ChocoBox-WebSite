@@ -30,18 +30,42 @@ nav {
     padding: 10px 40px;
 }
 
-.pontosreferencia{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: flex-start; /* Centraliza verticalmente */
-    padding: 20px;
+
+
+.pontosReferencia {
+    display: flex;
+    flex-direction: row; /* Mantém as figures lado a lado */
+    justify-content: space-between; /* Espaço entre as figures */
+    align-items: flex-start; /* Alinha as figures ao topo */
+    gap: 20px; /* Espaçamento entre as figures */
 }
 
+
+
+.pontosReferencia .pontoTuristico {
+    display: flex;
+    flex-direction: column; /* Organiza o texto em formato de coluna */
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens extras */
+    text-align: center; /* Centraliza o texto */
+}
+
+figure {
+    display: flex;
+    flex:1;
+    align-items: center; /* Centraliza horizontalmente */
+
+}
 figure img {
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 520px; /* A imagem ocupa 100% da largura do contêiner */
+    max-width: 800px; /* Largura máxima da imagem */
+    height: 420px;
+    max-height: 800px; /* Altura máxima da imagem */
+    border-radius: 8px ;
+    border: #333 solid 2px; /* Borda ao redor da imagem */
 }
 
 li {
@@ -59,6 +83,7 @@ li {
     line-height: 1.5; /* Altura da linha */
     color: #333; /* Cor do texto */
 }
+
 
 .carrossel-container {
     display: flex; /* Organiza os elementos em linha */
