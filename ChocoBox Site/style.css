@@ -154,7 +154,6 @@ li {
     align-items: center; /* Alinha verticalmente */
     gap: 20px; /* Espaço entre o carrossel e o texto */
     margin: 20px 0; /* Espaçamento externo */
-    padding: 500px;
     align-items: center;
     border: #007BFF solid 2px; /* Borda ao redor do carrossel */
 }
