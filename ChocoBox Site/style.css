@@ -247,7 +247,6 @@ li {
     margin: 20px 0;
     /* Espaçamento externo */
     align-items: center;
-    border: #007BFF solid 2px;
     /* Borda ao redor do carrossel */
 }
 
@@ -437,8 +436,6 @@ footer .footer-social {
     align-items: center;
     /* Centraliza os itens horizontalmente */
     padding: 20px;
-    /* Espaçamento interno */
-    border: #007BFF solid 2px;
     /* Borda ao redor do contêiner */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -447,7 +444,6 @@ footer .footer-social {
 }
 
 .itens-venda-container .itens-venda {
-    border: #007BFF solid 2px;
     /* Borda ao redor do contêiner */
     flex: 1;
     align-items: left;
