@@ -630,9 +630,9 @@ footer .footer-social {
 .descricao1 {
     flex: 1;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 30px;
+    font-size: 20px;
     /* Tamanho da fonte */
-    line-height: 2.0;
+    line-height: 1.5;
     /* Altura da linha para melhor legibilidade */
     color: #333;
     /* Cor do texto */
