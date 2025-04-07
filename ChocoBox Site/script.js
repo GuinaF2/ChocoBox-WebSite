@@ -19,3 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Inicializa a primeira imagem como ativa
     images[currentIndex].classList.add("active");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".container_gastronomia");
+    const images = document.querySelectorAll(".container_gastronomia img");
+    let index = 0;
+
+    function moveCarousel() {
+        index++;
+        if (index >= images.length) {
+            index = 0;
+        }
+        const offset = -index * container.clientWidth;
+        container.style.transform = `translateX(${offset}px)`;
+    }
+
+    setInterval(moveCarousel, 3000); // Troca de imagem a cada 3 segundos
+});
