@@ -639,3 +639,14 @@ footer .footer-social {
     text-align: justify;
     /* Justifica o texto */
 }
+
+.descricao2 {
+    font-size: 20px;
+    /* Tamanho da fonte */
+    line-height: 1.5;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
