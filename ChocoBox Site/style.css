@@ -540,3 +540,32 @@ footer .footer-social {
     border: none;
     /* Remove a borda da imagem */
 }
+
+.gastronomia-container {
+    display: flex;
+    /* Alinha os itens lado a lado */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    gap: 20px;
+    /* Espaçamento entre o carrossel e o texto */
+    margin: 20px auto;
+    /* Centraliza o contêiner na página */
+    max-width: 800px;
+    /* Define uma largura máxima */
+}
+
+
+/* Ajuste o texto da descrição */
+
+.descricao_gastronomia {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+}
