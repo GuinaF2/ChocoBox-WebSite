@@ -650,3 +650,34 @@ footer .footer-social {
     text-align: justify;
     /* Justifica o texto */
 }
+
+
+/* Estilo para o título "E o clima?" */
+
+h2 {
+    font-size: 24px;
+    /* Tamanho da fonte */
+    color: #2C3E50;
+    /* Cor do texto */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
+    font-family: 'Arial', sans-serif;
+    /* Fonte */
+    text-align: left;
+    /* Alinhamento do texto */
+}
+
+p {
+    font-size: 18px;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #34495E;
+    /* Cor do texto */
+    font-family: 'Georgia', serif;
+    /* Fonte */
+    text-align: justify;
+    /* Justifica o texto */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do parágrafo */
+}
