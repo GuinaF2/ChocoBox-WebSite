@@ -505,7 +505,7 @@ footer .footer-social {
     /* Sombra ao redor do carrossel */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
-    height: 300px;
+    height: 350px;
     /* Altura fixa para o carrossel */
     width: 300px;
     /* Largura fixa para o carrossel */
@@ -551,7 +551,7 @@ footer .footer-social {
     /* Espaçamento entre o carrossel e o texto */
     margin: 20px 0;
     /* Centraliza o contêiner na página */
-    max-width: 3000px;
+    max-width: 2900px;
     /* Define uma largura máxima */
 }
 
