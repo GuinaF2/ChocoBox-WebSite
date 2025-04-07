@@ -638,4 +638,6 @@ footer .footer-social {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
+    max-width: 2900px;
+    /* Define uma largura máxima */
 }
