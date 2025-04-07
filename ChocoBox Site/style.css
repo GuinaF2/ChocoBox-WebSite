@@ -211,11 +211,21 @@ figure img {
 
 li {
     list-style: none;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
+    /* Remove o marcador padrão */
+    margin: 20px 0;
+    /* Aumenta o espaçamento externo */
+    padding: 20px;
+    /* Aumenta o espaçamento interno */
+    font-size: 18px;
+    /* Aumenta o tamanho da fonte */
+    line-height: 1.8;
+    /* Aumenta o espaçamento entre as linhas */
+    border-radius: 10px;
+    /* Bordas arredondadas */
     background-color: #f8f8f8;
+    /* Cor de fundo */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
 }
 
 
