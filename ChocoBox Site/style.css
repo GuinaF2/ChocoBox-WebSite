@@ -163,34 +163,43 @@ li {
 
 /*pag paises*/
 
-.descricao {
+
+.descricao1 {
+    border: #CB997E solid 12px;
     flex: 1;
-    font-size: 1.7rem;
-    line-height: 1.5;
-    color: #333;
+    justify-content:flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 2.3rem;
+    /* Tamanho da fonte */
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #8e9481;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
 
 .carrossel-container {
     display: flex;
+    grid-template-rows: 1fr 1fr;
     /* Organiza os elementos em linha */
     align-items: center;
     /* Alinha verticalmente */
-    gap: 20px;
+    gap: 2rem;
     /* Espaço entre o carrossel e o texto */
     margin: 20px 0;
-    /* Espaçamento externo */
-    align-items: center;
-    /* Borda ao redor do carrossel */
+   
 }
 
 .carrossel {
+    border: #CB997E solid 15px;
     flex: 1;
     /* O carrossel ocupa o espaço disponível */
-    max-width: 300px;
-    width: 100%;
     /* Largura máxima do carrossel */
-    height: 100%;
+    height: 30rem;
     max-height: 500px;
+    width: 50rem;
+    align-self: baseline;
     /* Altura fixa */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
@@ -203,9 +212,12 @@ li {
 }
 
 .carrossel img {
+    border: #795c34 solid 2px;
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
     height: 100%;
+    max-width: 50rem;
+    max-height: 70rem;
     /* Ajusta a altura para preencher o carrossel */
     position: absolute;
     /* Sobrepõe as imagens umas às outras */
@@ -217,6 +229,24 @@ li {
     /* Transição suave entre imagens */
     image-rendering: pixelated;
     /* Melhora a qualidade da imagem */
+}
+
+.carrossel-cidade{
+    border: #CB997E solid 2px;
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #FFE8D6;
+    /* Cor de fundo */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor do carrossel */
 }
 
 .carrossel img.active {
@@ -458,18 +488,6 @@ footer .footer-social {
     font-family: Aptos;
 }
 
-.descricao1 {
-    flex: 1;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 2.3rem;
-    /* Tamanho da fonte */
-    line-height: 1.7;
-    /* Altura da linha para melhor legibilidade */
-    color: #8e9481;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
 
 .descricao2 {
     font-size: 2rem;
@@ -530,13 +548,13 @@ p {
 }
 
 iframe {
-    width: fit-content  ;
+    width:22rem ;
     /* Largura do iframe */
     height: 30rem;
 
-    max-width: 600px;
+    max-width: 1000px;
 
-    max-height: 800px;
+    max-height: 1400px;
     /* Altura do iframe */
     border: none;
     /* Remove a borda do iframe */
@@ -544,7 +562,10 @@ iframe {
 }
 
 .banner .banner-imagem{
-    flex: 1;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+
     max-width: 90%;
 }
 
