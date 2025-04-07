@@ -630,7 +630,7 @@ footer .footer-social {
 .descricao1 {
     flex: 1;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 25px;
+    font-size: 23px;
     /* Tamanho da fonte */
     line-height: 1.7;
     /* Altura da linha para melhor legibilidade */
