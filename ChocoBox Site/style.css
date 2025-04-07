@@ -602,9 +602,9 @@ footer .footer-social {
     /* O carrossel ocupa o espaço disponível */
     max-width: 100%;
     /* Largura máxima do carrossel */
-    height: 560px;
+    height: 500px;
     /* Altura fixa */
-    width: 480px;
+    width: 530px;
     /* Largura fixa para o carrossel */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
