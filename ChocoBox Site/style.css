@@ -509,8 +509,6 @@ footer .footer-social {
     /* Altura fixa para o carrossel */
     width: 300px;
     /* Largura fixa para o carrossel */
-    margin: auto;
-    /* Centraliza o carrossel */
     border-radius: 10px;
     /* Bordas arredondadas */
 }
@@ -544,8 +542,8 @@ footer .footer-social {
 .gastronomia-container {
     display: flex;
     /* Alinha os itens lado a lado */
-    align-items: center;
-    /* Centraliza verticalmente */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
     justify-content: space-between;
     /* Espaço entre os itens */
     gap: 20px;
@@ -564,7 +562,7 @@ footer .footer-social {
     /* Faz o texto ocupar o espaço restante */
     font-size: 1rem;
     /* Tamanho da fonte */
-    line-height: 1.6;
+    line-height: 2.0;
     /* Altura da linha para melhor legibilidade */
     color: #333;
     /* Cor do texto */
