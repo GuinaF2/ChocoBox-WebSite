@@ -222,10 +222,11 @@ li {
     /* Aumenta o espaçamento entre as linhas */
     border-radius: 10px;
     /* Bordas arredondadas */
-    background-color: #c9d3b6;
+    background-color: #8e9481;
     /* Cor de fundo */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra */
+    font-family: 'Georgia', serif;
 }
 
 
