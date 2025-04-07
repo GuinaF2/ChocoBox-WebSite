@@ -571,7 +571,7 @@ footer .footer-social {
     font-family: Aptos;
 }
 
-carrossel-container1 {
+.carrossel-container1 {
     display: flex;
     /* Organiza os elementos em linha */
     align-items: center;
@@ -582,6 +582,8 @@ carrossel-container1 {
     /* Espaçamento externo */
     align-items: center;
     /* Borda ao redor do carrossel */
+    max-width: 1200px;
+    /* Define uma largura máxima para o contêiner */
 }
 
 .carrossel1 {
@@ -623,4 +625,17 @@ carrossel-container1 {
 .carrossel1 img.active {
     opacity: 1;
     /* Apenas a imagem ativa será visível */
+}
+
+.descricao1 {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
