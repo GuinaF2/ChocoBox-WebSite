@@ -214,15 +214,15 @@ li {
     /* Remove o marcador padrão */
     margin: 20px 0;
     /* Aumenta o espaçamento externo */
-    padding: 20px;
+    padding: 15px;
     /* Aumenta o espaçamento interno */
-    font-size: 18px;
+    font-size: 17px;
     /* Aumenta o tamanho da fonte */
-    line-height: 1.8;
+    line-height: 1.6;
     /* Aumenta o espaçamento entre as linhas */
     border-radius: 10px;
     /* Bordas arredondadas */
-    background-color: #f8f8f8;
+    background-color: #c9d3b6;
     /* Cor de fundo */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra */
