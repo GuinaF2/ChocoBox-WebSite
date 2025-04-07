@@ -270,22 +270,7 @@ section h2 {
     color: #ffe8d6;
 }
 
-.formulario {
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    flex-direction: column;
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    /* Centraliza os elementos horizontalmente */
-    padding: 20px;
-    /* Espaçamento interno */
-    background-color: #CB997E;
-    /* Cor de fundo */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra ao redor do formulário */
-}
+
 
 footer {
     display: flex;
@@ -582,4 +567,73 @@ iframe {
     max-width: fit-content;
     max-height: fit-content;
     
+}
+
+
+
+
+.formulario label {
+    font-size: 1.3rem;
+    /* Tamanho da fonte */
+    color: #3b8fa2;
+    /* Cor do texto */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do rótulo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario input{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.formulario {
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    align-content: center;
+    /* Centraliza os elementos horizontalmente */
+    padding: 2.4rem;
+    /* Espaçamento interno */
+    background-color: #f9f9f9;
+    /* Cor de fundo */
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.formulario .form-solo{
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
+}
+
+.formulario .form-group{
+    display: flexbox;
+    /* Usa Flexbox para organizar os elementos */
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
+}
+
+.formulario .form-botao{
+    display: flex;
+    gap: 2rem;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
 }
