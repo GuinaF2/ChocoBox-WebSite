@@ -655,7 +655,7 @@ footer .footer-social {
 /* Estilo para o título "E o clima?" */
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
     /* Tamanho da fonte */
     color: #2C3E50;
     /* Cor do texto */
@@ -668,7 +668,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     /* Tamanho da fonte */
     line-height: 1.6;
     /* Altura da linha para melhor legibilidade */
