@@ -2,7 +2,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     /* Uma coluna */
-    background-color: #cacac7;
+    background-color: #e8e8e2;
     /* Cor de fundo */
     font-family: 'Roboto', sans-serif;
     /* Fonte padrão */
