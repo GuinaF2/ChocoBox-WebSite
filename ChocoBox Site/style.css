@@ -505,9 +505,9 @@ footer .footer-social {
     /* Sombra ao redor do carrossel */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
-    height: 350px;
+    height: 370px;
     /* Altura fixa para o carrossel */
-    width: 300px;
+    width: 350px;
     /* Largura fixa para o carrossel */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -563,7 +563,7 @@ footer .footer-social {
     /* Faz o texto ocupar o espaço restante */
     font-size: 20px;
     /* Tamanho da fonte */
-    line-height: 2.0;
+    line-height: 1.6;
     /* Altura da linha para melhor legibilidade */
     color: #333;
     /* Cor do texto */
