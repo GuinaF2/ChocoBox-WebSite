@@ -582,7 +582,7 @@ footer .footer-social {
     /* Espaçamento externo */
     align-items: center;
     /* Borda ao redor do carrossel */
-    max-width: 1200px;
+    max-width: 100%;
     /* Define uma largura máxima para o contêiner */
 }
 
@@ -638,6 +638,4 @@ footer .footer-social {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
-    max-width: 2900px;
-    /* Define uma largura máxima */
 }
