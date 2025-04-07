@@ -505,32 +505,38 @@ footer .footer-social {
     /* Sombra ao redor do carrossel */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
-    height: 100px;
-    /* Altura fixa */
-    width: 100%;
-    /* Largura fixa */
+    height: 200px;
+    /* Altura fixa para o carrossel */
+    width: 200px;
+    /* Largura fixa para o carrossel */
+    margin: auto;
+    /* Centraliza o carrossel */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
-
-
-/*segura as imagens em linha*/
 
 .container_gastronomia {
     display: flex;
-    /*img lado a lado*/
+    /* Imagens lado a lado */
     transition: transform 0.5s ease-in-out;
     /* Transição suave entre as imagens */
     transform: translateX(0);
-    /* Posição inicial sem deslocamento*/
+    /* Posição inicial sem deslocamento */
+    height: 100%;
+    /* Ajusta à altura do contêiner pai */
+    width: 100%;
+    /* Ajusta à largura do contêiner pai */
 }
 
 .container_gastronomia img {
     flex-shrink: 0;
     /* Impede que as imagens encolham */
-    width: 30%;
-    /*ajusta a largura da imagem*/
-    height: 30%;
+    width: 100%;
+    /* Ajusta a largura da imagem ao contêiner */
+    height: 100%;
+    /* Ajusta a altura da imagem ao contêiner */
     object-fit: cover;
-    /* Ajusta a imagem para preencher tudo */
+    /* Ajusta a imagem para preencher o espaço sem distorção */
     border: none;
     /* Remove a borda da imagem */
 }
