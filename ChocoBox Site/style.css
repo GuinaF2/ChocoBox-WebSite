@@ -44,6 +44,7 @@ body {
 }
 
 main {
+    overflow-x: hidden;
     width: 95%;
     padding: 15px;
     overflow: auto;
