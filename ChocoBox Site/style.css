@@ -172,7 +172,7 @@ figure img {
     /* Borda ao redor da imagem */
 }
 
-li {
+.itens-venda li {
     list-style: none;
     margin: 1.25rem 0;
     padding: 0.9375rem;
