@@ -773,6 +773,28 @@ iframe {
     /* Adiciona sombra */
 }
 
+.carrossel1 img.active {
+    opacity: 1;
+    /* Apenas a imagem ativa será visível */
+}
+
+.carrossel1 img {
+    flex-shrink: 0;
+    /* Impede que as imagens encolham */
+    width: 100%;
+    /* Cada imagem ocupa 100% da largura do carrossel */
+    height: 100%;
+    /* Ajusta a altura para preencher o carrossel */
+    object-fit: cover;
+    /* Ajusta a imagem sem distorção */
+    position: absolute;
+    /* Sobrepõe as imagens umas às outras */
+    opacity: 0;
+    /* Torna as imagens invisíveis por padrão */
+    transition: opacity 1s ease-in-out;
+    /* Transição suave entre imagens */
+}
+
 .carrossel-container1 p {
     flex: 1;
     /* Faz o texto ocupar o espaço restante */
