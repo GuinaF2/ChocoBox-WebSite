@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irlanda</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="irlanda.js" defer></script>
+  
+<head> 
+  <meta charset = "UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title> Irlanda </title>
+  <link rel="icon" type="icon-title" href="Resources/logo.png">
+  <script src="script.js"></script>
 </head>
 
 <body>
+  <header>
+    <div class="header-container"> 
+      <div class="logo">
+        <a href="index.html"><img src="Resources/logo.png" alt="Logo do site"></a>
+      </div>
 
-    <!-- Carrossel1 -->
-    <div class="carrossel1-container">
-        <div class="carrossel1">
-            <div class="container" id="img">
+      <div class="search-bar">
+        <label for="search">Buscar Viagens</label>
+        <input type="search" id="search" placeholder="Pesquise aqui" />
+      </div>
+
+
+      <nav class="menu">
+        <div class="otherpages"><a href="comida.html"><h2>Culinária</h2></a></div>
+        <div class="otherpages"><a href="aboutus.html"><h2>Sobre Nós</h2></a></div>
+        <div class="otherpages"><a href="paises.html"><h2>Pontos Turísticos</h2></a></div>
+        <div class="otherpages"><a href="tips.html"><h2>Dicas</h2></a></div>
+      </nav>
+    </div>
+  </header>
+
+<body>
+    <main>
+
+        <section class="irlanda-container">
+            <div class="linha">
+              <div class="carrossel-irlanda">
+      
                 <img src="Resources/irlanda_img1.webp" alt="Imagem 1">
                 <img src="Resources/irlanda_img2.jpg" alt="Imagem 2">
                 <img src="Resources/irlanda_img3.webp" alt="Imagem 3">
-            </div>
-        </div>
-
-        <div class="texto1">
-            <p>
+              </div>
+          
+              <div class="descricao1">
+              <p>
                 A Irlanda é uma nação com raízes profundas, onde história e cultura caminham lado a lado. Povos antigos já habitavam a ilha há milênios, e deixaram monumentos impressionantes, como Newgrange — mais antigo que as pirâmides do Egito. A chegada do cristianismo
                 no século V, com São Patrício, transformou a Irlanda em um centro de conhecimento e espiritualidade durante a Idade Média. A partir do século XII, a ilha passou por um longo período de dominação inglesa, marcado por conflitos, desigualdade
                 e forte repressão cultural. No século XIX, a Grande Fome causou a morte de mais de um milhão de pessoas e forçou a emigração de tantos outros, espalhando a cultura irlandesa pelo mundo. Após décadas de luta, a Irlanda conquistou sua independência
@@ -30,9 +52,9 @@
                 sua forte identidade cultural, seu povo acolhedor e suas paisagens deslumbrantes. A tradição celta permanece viva na música, na dança, nas lendas e nos festivais. A literatura irlandesa é celebrada mundialmente, com nomes como James Joyce
                 e W.B. Yeats, e a vida social gira em torno dos pubs, onde música e histórias se misturam em um ambiente caloroso e autêntico.
             </p>
-        </div>
-    </div>
-
+            </div>
+            </div>
+          </section>
 
     <div class="texto2">
         <p>
@@ -135,7 +157,7 @@
             </figcaption>
         </div>
     </div>
-
+    </main>
 </body>
 
 </html>
