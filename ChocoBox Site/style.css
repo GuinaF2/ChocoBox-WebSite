@@ -1238,6 +1238,10 @@ iframe {
 .imagemponto {
     display: flex;
     flex-direction: row;
+    flex-direction: row;
+    /* Alinha a imagem e o texto lado a lado */
+    gap: 15px;
+    /* Espaçamento entre a imagem e o texto */
 }
 
 .pontosTuristicos {
@@ -1250,12 +1254,14 @@ iframe {
     /* Espaço entre a imagem e o texto */
     margin: 20px 0;
     /* Espaçamento acima e abaixo do bloco */
+    margin-left: 1rem;
+    /* Adiciona espaçamento à direita da imagem */
 }
 
 .pontosTuristicos img {
-    width: 25rem;
+    width: 20rem;
     /* Define a largura da imagem */
-    height: 20rem;
+    height: 17rem;
     /* Mantém a proporção da imagem */
     max-width: 500px;
     max-height: 500px;
@@ -1263,6 +1269,8 @@ iframe {
     /* Adiciona bordas arredondadas */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     /* Adiciona uma sombra à imagem */
+    margin-left: 1rem;
+    /* Adiciona espaçamento à direita da imagem */
 }
 
 .pontosTuristicos p {
@@ -1270,61 +1278,48 @@ iframe {
     /* Tamanho da fonte */
     line-height: 1.4;
     /* Espaçamento entre linhas */
-    color: #6B705C;
+    color: #4d543c;
     /* Cor do texto */
     margin: 0;
     /* Remove margens padrão */
 }
 
 
-/* Estilo para o segundo bloco de pontos turísticos */
-
-
 /*estilo textos pag paises*/
 
+.pontosTuristicos {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 3.5rem;
+    /* Tamanho da fonte */
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+    gap: 20px;
+    /* Espaçamento entre a imagem e o texto */
+}
+
+.pontosTuristicos {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 3.5rem;
+    /* Tamanho da fonte */
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+    gap: 20px;
+    /* Espaçamento entre a imagem e o texto */
+}
+
 .texto2 {
-    flex: 1;
-    justify-content: flex-start;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1.8rem;
-    /* Tamanho da fonte */
-    line-height: 1.0;
-    /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
-
-.pontosTuristicos {
-    flex: 1;
-    justify-content: flex-start;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 3.5rem;
-    /* Tamanho da fonte */
-    line-height: 1.7;
-    /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
-
-.pontosTuristicos {
-    flex: 1;
-    justify-content: flex-start;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 3.5rem;
-    /* Tamanho da fonte */
-    line-height: 1.7;
-    /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
-
-.descricao_gastronomia {
     flex: 1;
     justify-content: flex-start;
     /* Faz o texto ocupar o espaço restante */
@@ -1399,4 +1394,18 @@ iframe {
     /* Altura da linha */
     color: #4d543c;
     /* Cor do texto */
+}
+
+.descricao_gastronomia {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1.8rem;
+    /* Tamanho da fonte */
+    line-height: 1.0;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
