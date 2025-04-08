@@ -4,32 +4,35 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #cbcbc2;
-    /* Cor de fundo */
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
     max-width: 1200px;
     /* Uma coluna */
     padding: 20px;
-
     overflow: auto;
 }
+
+
 
 header {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
+    padding:  20px;
     /* Espaçamento interno */
     background-color: #282b1d;
     border-bottom: 0.125rem solid #ccc;
 }
 
 header .header-container {
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     gap: 5rem;
     /* Usa Flexbox para organizar os elementos */
@@ -417,8 +420,23 @@ section h2 {
     color: #ffe8d6;
 }
 
-footer.container{
-    max-width: 1200px;
+
+footer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    background-color: #fff;
+    border-top: 0.125rem solid #ccc;
+    box-shadow: #333 0.125rem solid;
+
+}
+
+
+footer .footer-container{
+    max-width: 1400px;
     display: flex;
     gap: 5rem;
     /* Usa Flexbox para organizar os elementos */
@@ -426,21 +444,6 @@ footer.container{
     /* Espaço entre os itens */
     align-items: center;
     /* Alinha os itens verticalmente */
-}
-
-footer {
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    justify-content: space-between;
-    /* Espaço entre os itens */
-    align-items: center;
-    /* Alinha os itens verticalmente */
-    padding: 10px 20px;
-    /* Espaçamento interno */
-    background-color: #f8f8f8;
-    /* Cor de fundo */
-    border-bottom: 2px solid #ccc;
-    /* Linha inferior */
 }
 
 .linha {
