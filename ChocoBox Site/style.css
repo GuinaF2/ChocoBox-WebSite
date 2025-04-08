@@ -367,8 +367,6 @@ figure img {
     box-shadow: #333 0px 0px 10px;
 }
 
-
-
 .descricao1 {
     flex: 1;
     justify-content: flex-start;
@@ -407,7 +405,6 @@ figure img {
     border-radius: 10px;
 }
 
-
 .carrossel-irlanda img,
 .carrossel img {
     width: 100%;
@@ -428,7 +425,7 @@ figure img {
     /* Melhora a qualidade da imagem */
 }
 
-.irlanda-container p{
+.irlanda-container p {
     font-size: 1rem;
 }
 
@@ -500,7 +497,6 @@ footer .footer-container {
     align-items: center;
     gap: 15px;
 }
-
 
 .comentarios-clientes {
     display: flex 1;
@@ -1015,7 +1011,6 @@ iframe {
 
 /*PAGINA PAISES*/
 
-
 .container {
     display: flex;
     /* Alinha as imagens lado a lado */
@@ -1049,7 +1044,6 @@ iframe {
     /* Justifica o texto */
     font-family: Aptos;
 }
-
 
 
 /*SOBRE NÓS*/
@@ -1245,3 +1239,80 @@ iframe {
     text-align: center;
     font-size: 0.9rem;
 }
+
+.pontosTuristicos {
+    display: flex;
+    /* Alinha a imagem e o texto lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    gap: 20px;
+    /* Espaço entre a imagem e o texto */
+    margin: 20px 0;
+    /* Espaçamento acima e abaixo do bloco */
+}
+
+.pontosTuristicos img {
+    width: 350px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra à imagem */
+}
+
+.pontosTuristicos p {
+    font-size: 16px;
+    /* Tamanho da fonte */
+    line-height: 1.4;
+    /* Espaçamento entre linhas */
+    color: #6B705C;
+    /* Cor do texto */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+.referencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pontosTuristicos_part2 {
+    display: flex;
+    /* Alinha a imagem e o texto lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    gap: 20px;
+    /* Espaço entre a imagem e o texto */
+    margin: 20px 0;
+    /* Espaçamento acima e abaixo do bloco */
+}
+
+.pontosTuristicos_part2 img {
+    width: 350px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra à imagem */
+}
+
+.pontosTuristicos_part2 p {
+    font-size: 16px;
+    /* Tamanho da fonte */
+    line-height: 1.4;
+    /* Espaçamento entre linhas */
+    color: #6B705C;
+    /* Cor do texto */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+
+/* Estilo para o segundo bloco de pontos turísticos */
