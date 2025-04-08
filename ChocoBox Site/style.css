@@ -13,7 +13,7 @@ main {
     max-width: 1200px;
     /* Uma coluna */
     padding: 20px;
-    border: #3b8fa2 solid 12px;
+
     overflow: auto;
 }
 
