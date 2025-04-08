@@ -412,6 +412,20 @@ figure img {
     /* Melhora a qualidade da imagem */
 }
 
+.descricao-gastronomia {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1.7rem;
+    /* Tamanho da fonte */
+    line-height: 0.8;
+    /* Altura da linha para melhor legibilidade */
+    color: #282b1d;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
 .carrossel-gastronomia img {
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
@@ -429,19 +443,6 @@ figure img {
     /* Transição suave entre imagens */
     image-rendering: pixelated;
     /* Melhora a qualidade da imagem */
-}
-
-.descricao_gastronomia {
-    flex: 1;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-    line-height: 1.0;
-    /* Altura da linha para melhor legibilidade */
-    color: #282b1d;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
 }
 
 .paises-container p {
@@ -492,19 +493,6 @@ figure img {
     /* Esconde partes das imagens fora do contêiner */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra */
-}
-
-.descricao_gastronomia {
-    flex: 1;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #282b1d;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
 }
 
 
@@ -1370,7 +1358,7 @@ iframe {
     /* Tamanho da fonte */
     line-height: 1.4;
     /* Espaçamento entre linhas */
-    color: #4d543c;
+    color: #282b1d;
     /* Cor do texto */
     margin: 0;
     /* Remove margens padrão */
@@ -1419,7 +1407,7 @@ iframe {
     /* Tamanho da fonte */
     line-height: 1.0;
     /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
+    color: #282b1d;
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
@@ -1486,18 +1474,4 @@ iframe {
     /* Altura da linha */
     color: #4d543c;
     /* Cor do texto */
-}
-
-.descricao_gastronomia {
-    flex: 1;
-    justify-content: flex-start;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1.8rem;
-    /* Tamanho da fonte */
-    line-height: 1.0;
-    /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
 }
