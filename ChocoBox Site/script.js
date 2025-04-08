@@ -60,3 +60,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define o intervalo para alternar as imagens a cada 3 segundos
     setInterval(showNextImage, 3000);
 });
+
+
+//*carrossel1 *//
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".container");
+    const images = document.querySelectorAll(".container img");
+    let index = 0;
+
+    function moveCarousel() {
+        index++;
+        if (index >= images.length) {
+            index = 0;
+        }
+        const offset = -index * 100; // Move 100% para cada imagem
+        container.style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(moveCarousel, 3000); // Troca de imagem a cada 3 segundos
+});

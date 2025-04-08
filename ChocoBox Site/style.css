@@ -28,7 +28,7 @@ header {
     border-bottom: 0.125rem solid #ccc;
 }
 
-.otherpages{
+.otherpages {
     display: flex;
     flex-direction: row;
 }
@@ -972,6 +972,8 @@ iframe {
     /* Esconde o conteúdo que ultrapassar */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra */
+    position: relative;
+    /* Necessário para o posicionamento das imagens */
 }
 
 .texto1 {
@@ -985,4 +987,24 @@ iframe {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
+}
+
+.container {
+    display: flex;
+    /* Alinha as imagens lado a lado */
+    transition: transform 0.5s ease-in-out;
+    /* Transição suave entre imagens */
+    width: 300%;
+    /* Largura total para acomodar todas as imagens */
+}
+
+.container img {
+    width: 100%;
+    /* Ajusta a largura da imagem ao contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    flex-shrink: 0;
+    /* Impede que as imagens encolham */
+    object-fit: cover;
+    /* Ajusta a imagem para preencher o espaço sem distorção */
 }
