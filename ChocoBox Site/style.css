@@ -378,7 +378,6 @@ figure img {
     margin: 20px 0;
 }
 
-.carrossel-container,
 .carrossel-paises,
 .carrossel {
     height: 30rem;
@@ -391,7 +390,6 @@ figure img {
     border-radius: 10px;
 }
 
-.carrossel-container img,
 .carrossel-paises img,
 .carrossel img {
     width: 100%;
@@ -421,7 +419,6 @@ figure img {
     font-family: Aptos;
 }
 
-.carrossel-container img.active,
 .carrossel-paises img.active,
 .carrossel img.active {
     opacity: 1;
