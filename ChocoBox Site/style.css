@@ -13,6 +13,8 @@ main {
     max-width: 1200px;
     /* Uma coluna */
     padding: 20px;
+    border: #3b8fa2 solid 12px;
+    overflow: auto;
 }
 
 header {
@@ -289,7 +291,7 @@ li {
 }
 
 .carrossel-container {
-    display: flex;
+    display: flex 1;
     grid-template-rows: 1fr 1fr;
     /* Organiza os elementos em linha */
     align-items: center;
@@ -308,21 +310,6 @@ li {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-}
-
-.carrossel-cidade>* {
-    flex: 1;
-}
-
-.carrossel .carrossel-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: #8e9481;
-    margin: 0;
-    text-align: center;
-    font-family: 'Georgia', serif;
 }
 
 .carrossel img {
@@ -527,104 +514,6 @@ ul .itens-venda-container {
     /* Sombra ao redor do contêiner */
 }
 
-.gastronomia-container {
-    display: flex;
-    flex-direction: row;
-    /* Alinha os itens lado a lado */
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
-    justify-content: space-between;
-    /* Espaço entre os itens */
-    gap: 20px;
-    /* Espaçamento entre o carrossel e o texto */
-    margin: 20px 0;
-    /* Centraliza o contêiner na página */
-    max-width: fit-content;
-    /* Define uma largura máxima */
-}
-
-
-/* Ajuste o texto da descrição */
-
-.descricao_gastronomia {
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1.25rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #8e9481;
-    /* Cor do texto */
-    text-align: justify;
-    font-family: Aptos;
-}
-
-.carrossel-container1 {
-    display: flex;
-    /* Organiza os elementos em linha */
-    align-items: center;
-    /* Alinha verticalmente */
-    gap: 20px;
-    /* Espaço entre o carrossel e o texto */
-    margin: 20px 0;
-    /* Espaçamento externo */
-    align-items: center;
-    /* Borda ao redor do carrossel */
-    max-width: 100%;
-    /* Define uma largura máxima para o contêiner */
-}
-
-.carrossel1 {
-    /* O carrossel ocupa o espaço disponível */
-    max-width: 100%;
-    /* Largura máxima do carrossel */
-    height: 600px;
-    /* Altura fixa */
-    width: 500px;
-    /* Largura fixa para o carrossel */
-    overflow: hidden;
-    /* Esconde as imagens fora do contêiner */
-    position: relative;
-    /* Necessário para posicionar as imagens */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombra */
-}
-
-.carrossel1 img {
-    width: 100%;
-    /* Cada imagem ocupa 100% da largura do carrossel */
-    height: 100%;
-    /* Ajusta a altura para preencher o carrossel */
-    position: absolute;
-    /* Sobrepõe as imagens umas às outras */
-    top: 0;
-    left: 0;
-    opacity: 0;
-    /* Torna as imagens invisíveis por padrão */
-    transition: opacity 2s ease-in-out;
-    /* Transição suave entre imagens */
-    image-rendering: pixelated;
-    /* Melhora a qualidade da imagem */
-}
-
-.carrossel1 img.active {
-    opacity: 1;
-    /* Apenas a imagem ativa será visível */
-}
-
-.descricao1 {
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 23px;
-    /* Tamanho da fonte */
-    line-height: 1.7;
-    /* Altura da linha para melhor legibilidade */
-    color: #333;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
-
 .descricao1 {
     font-size: 1.25rem;
     /* Tamanho da fonte */
@@ -634,64 +523,6 @@ ul .itens-venda-container {
     /* Cor do texto */
     text-align: justify;
     font-family: Aptos;
-}
-
-.carrossel-cidade {
-    display: flex;
-    flex-direction: row;
-    /* Alinha os itens lado a lado */
-    /* Alinha os itens ao topo */
-    justify-content: space-between;
-    /* Espaço entre os itens */
-    gap: 20px;
-    /* Espaçamento entre o carrossel e o texto */
-    margin: 20px 0;
-    /* Centraliza o contêiner na página */
-    /* Define uma largura máxima */
-}
-
-.descricao2 {
-    display: flex;
-    flex: 1;
-    font-size: 2rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #8e9481;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
-
-
-/* Estilo para o título "E o clima?" */
-
-h2 {
-    font-size: 2.8rem;
-    /* Tamanho da fonte */
-    color: #8e9481;
-    /* Cor do texto */
-    margin-bottom: 10px;
-    /* Espaçamento abaixo do título */
-    font-family: 'Arial', sans-serif;
-    /* Fonte */
-    text-align: left;
-    /* Alinhamento do texto */
-}
-
-p {
-    font-size: 2rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #8e9481;
-    /* Cor do texto */
-    font-family: 'Georgia', serif;
-    /* Fonte */
-    text-align: justify;
-    /* Justifica o texto */
-    margin-bottom: 20px;
-    /* Espaçamento abaixo do parágrafo */
 }
 
 .banner {
@@ -711,13 +542,10 @@ p {
 
 iframe {
     width: 220rem;
-    /* Largura do iframe */
     height: 30rem;
     max-width: 1000px;
     max-height: 1400px;
-    /* Altura do iframe */
     border: none;
-    /* Remove a borda do iframe */
 }
 
 .banner .banner-imagem {
@@ -729,13 +557,9 @@ iframe {
 
 .banner .banner-imagem img {
     width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
     max-width: 800px;
-    /* Remove valores fixos */
     height: auto;
-    /* Mantém a proporção */
     border-radius: 0.5rem;
-    /* Usa rem para bordas arredondadas */
 }
 
 .texto-banner {
@@ -748,11 +572,8 @@ iframe {
 
 .formulario label {
     font-size: 1.3rem;
-    /* Tamanho da fonte */
     color: #3b8fa2;
-    /* Cor do texto */
     margin-bottom: 10px;
-    /* Espaçamento abaixo do rótulo */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -831,63 +652,3 @@ iframe {
 
 /*carrossel 1*/
 
-.carrossel-container1 {
-    display: flex;
-    /* Alinha os itens lado a lado */
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
-    gap: 20px;
-    /* Espaçamento entre o carrossel e o texto */
-    margin: 20px 0;
-    /* Espaçamento externo */
-}
-
-.carrossel1 {
-    flex-shrink: 0;
-    /* Impede que o carrossel encolha */
-    width: 50%;
-    /* Define a largura do carrossel */
-    height: auto;
-    /* Ajusta a altura automaticamente */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    overflow: hidden;
-    /* Esconde o conteúdo que ultrapassar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombra */
-}
-
-.carrossel1 img.active {
-    opacity: 1;
-    /* Apenas a imagem ativa será visível */
-}
-
-.carrossel1 img {
-    flex-shrink: 0;
-    /* Impede que as imagens encolham */
-    width: 100%;
-    /* Cada imagem ocupa 100% da largura do carrossel */
-    height: 100%;
-    /* Ajusta a altura para preencher o carrossel */
-    object-fit: cover;
-    /* Ajusta a imagem sem distorção */
-    position: absolute;
-    /* Sobrepõe as imagens umas às outras */
-    opacity: 0;
-    /* Torna as imagens invisíveis por padrão */
-    transition: opacity 1s ease-in-out;
-    /* Transição suave entre imagens */
-}
-
-.carrossel-container1 p {
-    flex: 1;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1.2rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #333;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
-}
