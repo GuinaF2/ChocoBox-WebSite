@@ -965,7 +965,7 @@ iframe {
     width: 500px;
     /* Define a largura do carrossel */
     height: 300px;
-    /* Ajusta a altura automaticamente */
+    /* Define a altura do carrossel */
     border-radius: 10px;
     /* Bordas arredondadas */
     overflow: hidden;
@@ -974,19 +974,6 @@ iframe {
     /* Adiciona sombra */
     position: relative;
     /* Necessário para o posicionamento das imagens */
-}
-
-.texto1 {
-    flex: 1;
-    /* Faz o texto ocupar o espaço restante */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #333;
-    /* Cor do texto */
-    text-align: justify;
-    /* Justifica o texto */
 }
 
 .container {
@@ -1001,10 +988,23 @@ iframe {
 .container img {
     width: 100%;
     /* Ajusta a largura da imagem ao contêiner */
-    height: auto;
-    /* Mantém a proporção da imagem */
+    height: 100%;
+    /* Ajusta a altura da imagem ao contêiner */
     flex-shrink: 0;
     /* Impede que as imagens encolham */
     object-fit: cover;
     /* Ajusta a imagem para preencher o espaço sem distorção */
+}
+
+.texto1 {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
