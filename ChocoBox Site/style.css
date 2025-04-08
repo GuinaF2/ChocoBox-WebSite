@@ -962,15 +962,15 @@ iframe {
 .carrossel1 {
     flex-shrink: 0;
     /* Impede que o carrossel encolha */
-    width: 50%;
+    width: 500px;
     /* Define a largura do carrossel */
-    height: auto;
+    height: 300px;
     /* Ajusta a altura automaticamente */
     border-radius: 10px;
     /* Bordas arredondadas */
     overflow: hidden;
-    /* Esconde o conteúdo que ultrapassar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Esconde partes das imagens que saem da borda */
+    box-shadow: 2px 2px 4px black;
     /* Adiciona sombra */
     position: relative;
     /* Necessário para o posicionamento das imagens */
