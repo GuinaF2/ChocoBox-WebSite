@@ -1278,3 +1278,125 @@ iframe {
 
 
 /* Estilo para o segundo bloco de pontos turísticos */
+
+
+/*estilo textos pag paises*/
+
+.texto2 {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1.8rem;
+    /* Tamanho da fonte */
+    line-height: 1.0;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+.pontosTuristicos {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 3.5rem;
+    /* Tamanho da fonte */
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+.pontosTuristicos {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 3.5rem;
+    /* Tamanho da fonte */
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+.descricao_gastronomia {
+    flex: 1;
+    justify-content: flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1.8rem;
+    /* Tamanho da fonte */
+    line-height: 1.0;
+    /* Altura da linha para melhor legibilidade */
+    color: #4d543c;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+.alta-temporada {
+    border: 2px solid #e1e5e0;
+    /* Cor da borda */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    background-color: #e1e5e0;
+    /* Cor de fundo */
+    padding: 0.3rem;
+    /* Espaçamento interno */
+    margin: 2.5rem;
+    /* Espaçamento externo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha */
+    color: #4d543c;
+    /* Cor do texto */
+}
+
+.meia-temporada {
+    border: 2px solid #e1e5e0;
+    /* Cor da borda */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    background-color: #e1e5e0;
+    /* Cor de fundo */
+    padding: 0.3rem;
+    /* Espaçamento interno */
+    margin: 2.5rem;
+    /* Espaçamento externo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha */
+    color: #4d543c;
+    /* Cor do texto */
+}
+
+.baixa-temporada {
+    border: 2px solid #e1e5e0;
+    /* Cor da borda */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    background-color: #e1e5e0;
+    /* Cor de fundo */
+    padding: 0.3rem;
+    /* Espaçamento interno */
+    margin: 2.5rem;
+    /* Espaçamento externo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha */
+    color: #4d543c;
+    /* Cor do texto */
+}
