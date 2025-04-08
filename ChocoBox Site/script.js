@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".carrossel-irlanda img");
+    const images = document.querySelectorAll(".carrossel-paises img");
     let currentIndex = 0;
 
     function showNextImage() {
