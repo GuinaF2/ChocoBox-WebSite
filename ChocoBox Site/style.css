@@ -164,7 +164,6 @@ li {
 /*pag paises*/
 
 .carrossel {
-    border: #3b8fa2 solid 12px;
     height: 30rem;
     max-height: 192rem;
     width: 50rem;
@@ -445,7 +444,6 @@ footer .footer-social {
     /* Cor do texto */
     text-align: justify;
     font-family: Aptos;
-    border: #3b8fa2 solid 12px;
 }
 
 .carrossel-cidade{
@@ -478,7 +476,6 @@ footer .footer-social {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
-    border: #3b8fa2 solid 12px;
 }
 
 
