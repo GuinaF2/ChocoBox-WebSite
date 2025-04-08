@@ -157,21 +157,7 @@ nav a {
 
 /*pag paises*/
 
-.pontoReferencia {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: #8e9481;
-    margin: 0;
-    text-align: center;
-    font-family: 'Georgia', serif;
-}
 
-figure .pontoTuristico {
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-}
 
 figure {
     display: flex;
@@ -1240,10 +1226,27 @@ iframe {
     font-size: 0.9rem;
 }
 
-.pontosTuristicos {
+.pontoReferencia {
     display: flex;
+    flex-direction: row;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #8e9481;
+    margin: 0;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.imagemponto{
+    display: flex;
+    flex-direction: row;
+}
+
+.pontosTuristicos{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     /* Alinha a imagem e o texto lado a lado */
-    align-items: flex-start;
     /* Alinha os itens ao topo */
     gap: 20px;
     /* Espaço entre a imagem e o texto */
@@ -1252,10 +1255,12 @@ iframe {
 }
 
 .pontosTuristicos img {
-    width: 350px;
+    width: 25rem;
     /* Define a largura da imagem */
-    height: auto;
+    height: 20rem;
     /* Mantém a proporção da imagem */
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 8px;
     /* Adiciona bordas arredondadas */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -1273,46 +1278,6 @@ iframe {
     /* Remove margens padrão */
 }
 
-.referencia {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.pontosTuristicos_part2 {
-    display: flex;
-    /* Alinha a imagem e o texto lado a lado */
-    align-items: flex-start;
-    /* Alinha os itens ao topo */
-    gap: 20px;
-    /* Espaço entre a imagem e o texto */
-    margin: 20px 0;
-    /* Espaçamento acima e abaixo do bloco */
-}
-
-.pontosTuristicos_part2 img {
-    width: 350px;
-    /* Define a largura da imagem */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    /* Adiciona bordas arredondadas */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma sombra à imagem */
-}
-
-.pontosTuristicos_part2 p {
-    font-size: 16px;
-    /* Tamanho da fonte */
-    line-height: 1.4;
-    /* Espaçamento entre linhas */
-    color: #6B705C;
-    /* Cor do texto */
-    margin: 0;
-    /* Remove margens padrão */
-}
 
 
 /* Estilo para o segundo bloco de pontos turísticos */
