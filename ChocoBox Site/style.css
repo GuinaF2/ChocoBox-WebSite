@@ -71,6 +71,10 @@ header .search-bar input[type="search"] {
     border-radius: 0.3125rem;
 }
 
+header .menu a:hover {
+    color: #fff;
+}
+
 header .orcamento {
     display: flex;
     align-items: center;
@@ -426,10 +430,17 @@ footer {
     grid-template-columns: 80% 20%;
 }
 
+footer .footer-info{
+    font-size: 20px;
+}
+footer .links-social-container{
+    display: grid;
+}
+
 footer .logo img {
-    max-width: 400px;
+    max-width: 200px;
     /* Tamanho da logo */
-    max-height: 400px;
+    max-height: 200px;
     height: 45%;
     width: 45%;
     /* Mantém a proporção da imagem */
@@ -437,9 +448,7 @@ footer .logo img {
 
 footer .footer-social {
     display: flex;
-    /* Usa Flexbox para organizar os ícones */
-    gap: 10px;
-    /* Espaço entre os ícones */
+    align-items: center;
 }
 
 ul .itens-venda-container {
