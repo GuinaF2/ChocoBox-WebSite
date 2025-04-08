@@ -432,7 +432,6 @@ figure img {
 }
 
 .gastronomia-container p {
-    flex: 1;
     justify-content: flex-start;
     /* Faz o texto ocupar o espaço restante */
     font-size: 1.0rem;

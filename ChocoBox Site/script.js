@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //*Script *//
 
 // Dados das comidas
-const foods = [
-    {
+const foods = [{
         id: 1,
         name: "Pizza Margherita",
         image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
@@ -127,16 +126,16 @@ foods.forEach(food => {
 // Função para renderizar as comidas
 function renderFoods(foodsToRender) {
     foodContainer.innerHTML = '';
-    
+
     if (foodsToRender.length === 0) {
         foodContainer.innerHTML = '<div class="no-results">Nenhuma comida encontrada. Tente outro termo de busca.</div>';
         return;
     }
-    
+
     foodsToRender.forEach(food => {
         const foodCard = document.createElement('div');
         foodCard.className = 'food-card';
-        
+
         foodCard.innerHTML = `
             <img src="${food.image}" alt="${food.name}" class="food-image">
             <div class="food-info">
@@ -157,19 +156,19 @@ function renderFoods(foodsToRender) {
                 </div>
             </div>
         `;
-        
+
         foodContainer.appendChild(foodCard);
     });
-    
+
     // Adicionar event listeners para as estrelas
     document.querySelectorAll('.star').forEach(star => {
         star.addEventListener('click', function() {
             const foodId = parseInt(this.parentElement.getAttribute('data-food-id'));
             const ratingValue = parseInt(this.getAttribute('data-rating'));
-            
+
             // Atualizar a avaliação
             ratings[foodId] = ratingValue;
-            
+
             // Atualizar a exibição das estrelas
             const stars = this.parentElement.querySelectorAll('.star');
             stars.forEach((s, index) => {
@@ -179,7 +178,7 @@ function renderFoods(foodsToRender) {
                     s.classList.remove('active');
                 }
             });
-            
+
             console.log(`Avaliação salva: Comida ${foodId} - ${ratingValue} estrelas`);
             // Aqui você poderia salvar no localStorage ou enviar para um servidor
         });
@@ -188,7 +187,7 @@ function renderFoods(foodsToRender) {
 
 // Função para filtrar comidas
 function filterFoods(searchTerm) {
-    const filtered = foods.filter(food => 
+    const filtered = foods.filter(food =>
         food.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         food.country.toLowerCase().includes(searchTerm.toLowerCase())
     );
