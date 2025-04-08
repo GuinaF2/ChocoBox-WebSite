@@ -309,17 +309,13 @@ footer {
 }
 
 .comentarios-clientes {
-    display: flex;
+    display: flex 1;
     /* Usa Flexbox para organizar os elementos */
     /* O contêiner ocupa o espaço disponível */
-    background-color: #f9f9f9;
-    /* Fundo claro */
+    background-color: none;
+    /* Fundo transparente */
     padding: 20px;
     /* Espaçamento interno */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
     margin-top: 20px;
     /* Espaçamento superior */
 }
