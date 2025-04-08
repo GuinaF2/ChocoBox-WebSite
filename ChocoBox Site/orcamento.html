@@ -9,58 +9,45 @@
 
 <body>
   
-    
-    <header>
-      <h1>  Viagem Pelo Mundo <img src="Resources/" alt="Descrição da Imagem"> </h1>
-      <label for="search">Buscar Viagens</label>
-      <input type="search" id="search" placeholder="Pesquise aqui">
-    </header>
-
-    <nav> 
-      <a href=""><h2>Culinária</h2></a>
-      <a href=""><h2>História</h2></a>
-      <a href=""><h2>Pontos Turísticos</h2></a>
-      <a href=""><h2>Hoteis</h2></a>
-    </nav>  
    
     <main>
 
         <div class="formulario">
-            <form>
-                <h2>Solicite um Orçamento</h2>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+          <h1>Solicite um Orçamento</h1>
+            <form >
+              <div class="form-group">
+                <label for="nome">Nome
+                <input type="text" id="nome" name="nome" required placeholder="João">
+             
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Silva">
+              </div>
+              <div class="form-solo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+              </div>
+              <div class="form-solo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+              </div>
+              <div class="form-solo">
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" name="destino" placeholder="Ex: São Paulo" required>
+              </div>
+                <div class="form-group">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="data">Data da ida</label>
+                <input type="date" min="2025-04-07" max="2025-12-29" id="data" name="data" required>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone"><br><br>
-
-                <label for="destino">Destino:</label>
-                <input type="text" id="destino" name="destino"><br><br>
-
-                <label for="data">Data da ida:</label>
-                <input type="date" min="2025-06-04" id="data" name="data"><br><br>
-
-                <label for="data">Data da volta:</label>
-                <input type="date" min="2025-06-04" id="data" name="data"><br><br>
-
+                <label for="data">Data da volta</label>
+                <input type="date" min="2025-04-07" max="2026-01-01" id="data" name="data" required>
+                </div>
+                <div class="form-botao">
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                </div>
             </form>
         </div>
-      <aside>
-
-      </aside>
-
-      <footer> 
-        <nav> 
-          <a href="">Viagens</a>
-          <a href="">Parceiros</a>
-          <a href="">Contatos</a>
-        </nav> 
-      </footer>
-
   </main>
 </body>
 

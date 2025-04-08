@@ -6,7 +6,7 @@ body {
     background-color: #cbcbc2;
     /* Cor de fundo */
     font-family: 'Roboto', sans-serif;
-    /* Fonte padrão */
+    font-size: 1.6rem;
 }
 
 main {
@@ -22,9 +22,7 @@ header {
     padding: 10px 20px;
     /* Espaçamento interno */
     background-color: #6B705C;
-    /* Cor de fundo */
-    border-bottom: 2px solid #ccc;
-    /* Linha inferior */
+    border-bottom: 0.125rem solid #ccc;
 }
 
 header .header-container {
@@ -42,7 +40,6 @@ header .header-container .logo img {
     width: 100px;
     /* Define o tamanho da logo */
     height: auto;
-    /* Mantém a proporção da imagem */
 }
 
 header .search {
@@ -50,94 +47,62 @@ header .search {
     font-size: 24px;
     /* Tamanho da fonte */
     color: #FFE8D6;
-    /* Cor do texto */
     font-weight: bold;
-    /* Deixa o texto em negrito */
     text-align: center;
-    /* Centraliza o texto */
 }
 
 header .search-bar {
     /* Faz a barra de pesquisa ocupar o espaço central */
     display: flex;
     flex-direction: column;
-    /* Organiza o label e o input verticalmente */
     align-items: center;
-    /* Centraliza o conteúdo horizontalmente */
     text-align: center;
 }
 
 header .search-bar input[type="search"] {
-    width: 100%;
-    /* Faz o input ocupar toda a largura disponível */
-    max-width: 400px;
-    /* Define uma largura máxima */
-    padding: 5px;
-    /* Espaçamento interno */
-    font-size: 16px;
-    /* Tamanho da fonte */
+    width: 90%;
+    max-width: 25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    /* Borda do input */
-    border-radius: 5px;
-    /* Bordas arredondadas */
+    border-radius: 0.3125rem;
 }
 
 header .orcamento {
     display: flex;
     align-items: center;
-    /* Centraliza o link verticalmente */
 }
 
 header .orcamento a {
     text-decoration: none;
-    /* Remove o sublinhado */
     color: #CB997E;
-    /* Cor do link */
-    font-size: 16px;
-    /* Tamanho da fonte */
+    font-size: 1rem;
     font-weight: bold;
-    /* Deixa o texto em negrito */
-    padding: 10px 15px;
-    /* Espaçamento interno */
-    border: 2px solid #CB997E;
-    /* Borda do link */
-    border-radius: 5px;
-    /* Bordas arredondadas */
+    padding: 0.625rem 0.9375rem;
+    border: 0.125rem solid #CB997E;
+    border-radius: 0.3125rem;
     transition: background-color 0.3s, color 0.3s;
-    /* Animação ao passar o mouse */
 }
 
 header .orcamento a:hover {
     background-color: #CB997E;
-    /* Fundo azul ao passar o mouse */
     color: #fff;
-    /* Texto branco ao passar o mouse */
 }
 
 nav {
     display: flex;
-    /* Usa Flexbox para organizar os itens do menu */
     justify-content: space-between;
-    /* Espaço entre os itens */
     align-items: center;
-    /* Alinha os itens verticalmente */
-    padding: 10px 20px;
-    /* Espaçamento interno */
+    padding: 0.625rem 1.25rem;
 }
 
 nav a {
     text-decoration: none;
-    /* Remove o sublinhado */
     color: #795c34;
-    /* Cor do link */
-    font-size: 16px;
-    /* Tamanho da fonte */
-    padding: 10px 15px;
-    /* Espaçamento interno */
-    border-radius: 5px;
-    /* Bordas arredondadas */
+    font-size: 1rem;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.3125rem;
     transition: background-color 0.3s, color 0.3s;
-    /* Animação ao passar o mouse */
 }
 
 .menu {
@@ -158,29 +123,15 @@ nav a {
 
 /*pag paises*/
 
-.pontosReferencia {
-    display: flex;
-    flex-direction: row;
-    /* Mantém as figures lado a lado */
-    justify-content: space-between;
-    /* Espaço entre as figures */
-    align-items: flex-start;
-    /* Alinha as figures ao topo */
-    gap: 20px;
-    /* Espaçamento entre as figures */
-}
-
-
-/*pag paises*/
-
 .pontoReferencia {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.6;
-    color: #333;
+    color: #8e9481;
     margin: 0;
     text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 figure .pontoTuristico {
@@ -202,11 +153,11 @@ figure {
 
 figure img {
     display: inline-block;
-    width: 500px;
+    width: 50%;
     /* A imagem ocupa 100% da largura do contêiner */
     max-width: 800px;
     /* Largura máxima da imagem */
-    height: 420px;
+    height: 100%;
     max-height: 800px;
     /* Altura máxima da imagem */
     border-radius: 8px;
@@ -216,11 +167,14 @@ figure img {
 
 li {
     list-style: none;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f8f8f8;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1.25rem 0;
+    padding: 0.9375rem;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    border-radius: 0.625rem;
+    background-color: #8e9481;
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
 }
 
 
@@ -229,31 +183,45 @@ li {
 .descricao {
     /* O texto ocupa o espaço disponível */
     font-size: 1.7rem;
+}
+
+
+.descricao1 {
+    border: #CB997E solid 12px;
+    flex: 1;
+    justify-content:flex-start;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 2.3rem;
     /* Tamanho da fonte */
-    line-height: 1.5;
-    /* Altura da linha */
-    color: #333;
+    line-height: 1.7;
+    /* Altura da linha para melhor legibilidade */
+    color: #8e9481;
     /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
 
 .carrossel-container {
     display: flex;
+    grid-template-rows: 1fr 1fr;
     /* Organiza os elementos em linha */
     align-items: center;
     /* Alinha verticalmente */
-    gap: 20px;
+    gap: 2rem;
     /* Espaço entre o carrossel e o texto */
     margin: 20px 0;
-    /* Espaçamento externo */
-    align-items: center;
-    /* Borda ao redor do carrossel */
+   
 }
 
 .carrossel {
+    border: #CB997E solid 15px;
+    flex: 1;
     /* O carrossel ocupa o espaço disponível */
-    max-width: 100%;
     /* Largura máxima do carrossel */
-    height: 400px;
+    height: 30rem;
+    max-height: 500px;
+    width: 50rem;
+    align-self: baseline;
     /* Altura fixa */
     overflow: hidden;
     /* Esconde as imagens fora do contêiner */
@@ -266,9 +234,12 @@ li {
 }
 
 .carrossel img {
+    border: #795c34 solid 2px;
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
     height: 100%;
+    max-width: 50rem;
+    max-height: 70rem;
     /* Ajusta a altura para preencher o carrossel */
     position: absolute;
     /* Sobrepõe as imagens umas às outras */
@@ -282,33 +253,8 @@ li {
     /* Melhora a qualidade da imagem */
 }
 
-.carrossel img.active {
-    opacity: 1;
-    /* Apenas a imagem ativa será visível */
-}
-
-section .descricaopage {
-    background-color: rgba(107, 112, 92, 0.8);
-    /* Cor de fundo com transparência */
-    font-size: 1.5rem;
-    font-family: monospace;
-    color: #ffe8d6;
-    /* Cor do texto */
-    border-radius: 10px;
-    text-align: center;
-    /* Centraliza o texto */
-}
-
-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 20px 0;
-    /* Espaçamento superior e inferior */
-    color: #ffe8d6;
-    /* Cor do texto */
-}
-
-.formulario {
+.carrossel-cidade{
+    border: #CB997E solid 2px;
     display: flex;
     /* Usa Flexbox para organizar os elementos */
     flex-direction: column;
@@ -317,13 +263,36 @@ section h2 {
     /* Centraliza os elementos horizontalmente */
     padding: 20px;
     /* Espaçamento interno */
-    background-color: #CB997E;
+    background-color: #FFE8D6;
     /* Cor de fundo */
     border-radius: 10px;
     /* Bordas arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra ao redor do formulário */
+    /* Sombra ao redor do carrossel */
 }
+
+.carrossel img.active {
+    opacity: 1;
+    /* Apenas a imagem ativa será visível */
+}
+
+section .descricaopage {
+    background-color: rgba(107, 112, 92, 0.8);
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: #ffe8d6;
+    border-radius: 0.625rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.25rem 0;
+    color: #ffe8d6;
+}
+
+
 
 footer {
     display: flex;
@@ -367,22 +336,11 @@ footer {
     /* Espaçamento superior */
 }
 
-.comentarios-clientes h2 {
-    font-size: 1.5rem;
-    /* Tamanho do título */
-    color: #333;
-    /* Cor do texto */
-    margin-bottom: 15px;
-    /* Espaçamento abaixo do título */
-    text-align: center;
-    /* Centraliza o título */
-}
 
 .comentarios-clientes .comentario {
     margin-bottom: 15px;
     /* Espaçamento entre os comentários */
     padding: 10px;
-    border-right: 4px solid #007BFF;
     /* Barra de destaque à esquerda */
     background-color: #fff;
     /* Fundo branco para os comentários */
@@ -390,24 +348,24 @@ footer {
     /* Bordas arredondadas */
 }
 
+.comentarios-clientes h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.9375rem;
+    text-align: center;
+}
+
 .comentarios-clientes .comentario p {
     font-size: 1rem;
-    /* Tamanho do texto */
     line-height: 1.6;
-    /* Altura da linha */
     color: #555;
-    /* Cor do texto */
-    margin: 0 0 5px 0;
-    /* Espaçamento inferior */
+    margin: 0 0 0.3125rem 0;
 }
 
 .comentarios-clientes .comentario span {
     font-size: 0.9rem;
-    /* Tamanho do texto do autor */
     color: #777;
-    /* Cor do texto do autor */
     font-style: italic;
-    /* Texto em itálico */
 }
 
 .itens-venda-wrapper {
@@ -416,9 +374,11 @@ footer {
 }
 
 footer .logo img {
-    width: 50px;
+    max-width: 400px;
     /* Tamanho da logo */
-    height: 40px;
+    max-height: 400px;
+    height: 45%;
+    width: 45%;
     /* Mantém a proporção da imagem */
 }
 
@@ -491,7 +451,6 @@ ul .itens-venda-container {
     /* Centraliza os itens horizontalmente */
     padding: 20px;
     /* Espaçamento interno */
-    border: #007BFF solid 2px;
     /* Borda ao redor do contêiner */
     background-color: #FFE8D6;
     /* Cor de fundo */
@@ -502,48 +461,10 @@ ul .itens-venda-container {
     /* Sombra ao redor do contêiner */
 }
 
-.carrossel_gatronomia {
-    box-shadow: 2px 2px 4px black;
-    /* Sombra ao redor do carrossel */
-    overflow: hidden;
-    /* Esconde as imagens fora do contêiner */
-    height: 420px;
-    /* Altura fixa para o carrossel */
-    width: 350px;
-    /* Largura fixa para o carrossel */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    margin: o;
-}
-
-.container_gastronomia {
-    display: flex;
-    /* Imagens lado a lado */
-    transition: transform 0.5s ease-in-out;
-    /* Transição suave entre as imagens */
-    transform: translateX(0);
-    /* Posição inicial sem deslocamento */
-    height: 100%;
-    /* Ajusta à altura do contêiner pai */
-    width: 100%;
-    /* Ajusta à largura do contêiner pai */
-}
-
-.container_gastronomia img {
-    flex-shrink: 0;
-    /* Impede que as imagens encolham */
-    width: 100%;
-    /* Ajusta a largura da imagem ao contêiner */
-    height: 100%;
-    /* Ajusta a altura da imagem ao contêiner */
-    object-fit: cover;
-    /* Ajusta a imagem para preencher o espaço sem distorção */
-    border: none;
-    /* Remove a borda da imagem */
-}
-
 .gastronomia-container {
     display: flex;
+    border: #CB997E solid 2px;
+    flex-direction: row;
     /* Alinha os itens lado a lado */
     align-items: flex-start;
     /* Alinha os itens ao topo */
@@ -553,7 +474,7 @@ ul .itens-venda-container {
     /* Espaçamento entre o carrossel e o texto */
     margin: 20px 0;
     /* Centraliza o contêiner na página */
-    max-width: 2900px;
+    max-width: fit-content;
     /* Define uma largura máxima */
 }
 
@@ -562,11 +483,11 @@ ul .itens-venda-container {
 
 .descricao_gastronomia {
     /* Faz o texto ocupar o espaço restante */
-    font-size: 20px;
+    font-size: 1.25rem;
     /* Tamanho da fonte */
     line-height: 1.6;
     /* Altura da linha para melhor legibilidade */
-    color: #333;
+    color: #8e9481;
     /* Cor do texto */
     text-align: justify;
     font-family: Aptos;
@@ -640,11 +561,11 @@ ul .itens-venda-container {
 }
 
 .descricao2 {
-    font-size: 20px;
+    font-size: 2rem;
     /* Tamanho da fonte */
     line-height: 1.6;
     /* Altura da linha para melhor legibilidade */
-    color: #333;
+    color: #8e9481;
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
@@ -654,9 +575,9 @@ ul .itens-venda-container {
 /* Estilo para o título "E o clima?" */
 
 h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     /* Tamanho da fonte */
-    color: #2C3E50;
+    color: #8e9481;
     /* Cor do texto */
     margin-bottom: 10px;
     /* Espaçamento abaixo do título */
@@ -667,11 +588,11 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 2rem;
     /* Tamanho da fonte */
     line-height: 1.6;
     /* Altura da linha para melhor legibilidade */
-    color: #34495E;
+    color: #8e9481;
     /* Cor do texto */
     font-family: 'Georgia', serif;
     /* Fonte */
@@ -679,4 +600,126 @@ p {
     /* Justifica o texto */
     margin-bottom: 20px;
     /* Espaçamento abaixo do parágrafo */
+}
+
+.banner{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-bottom: 2px solid #ccc;
+    /* Linha inferior */
+   
+}
+
+iframe {
+    width:22rem ;
+    /* Largura do iframe */
+    height: 30rem;
+
+    max-width: 1000px;
+
+    max-height: 1400px;
+    /* Altura do iframe */
+    border: none;
+    /* Remove a borda do iframe */
+
+}
+
+.banner .banner-imagem{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 90%;
+}
+
+.banner .banner-imagem img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    max-width: 800px; /* Remove valores fixos */
+    height: auto; /* Mantém a proporção */
+    border-radius: 0.5rem; /* Usa rem para bordas arredondadas */
+}
+.texto-banner{
+    flex: 1;
+    align-content:center;
+    text-align: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    
+}
+
+
+
+
+.formulario label {
+    font-size: 1.3rem;
+    /* Tamanho da fonte */
+    color: #3b8fa2;
+    /* Cor do texto */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do rótulo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario input{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.formulario {
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    align-content: center;
+    /* Centraliza os elementos horizontalmente */
+    padding: 2.4rem;
+    /* Espaçamento interno */
+    background-color: #f9f9f9;
+    /* Cor de fundo */
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.formulario .form-solo{
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
+}
+
+.formulario .form-group{
+    display: flexbox;
+    /* Usa Flexbox para organizar os elementos */
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
+}
+
+.formulario .form-botao{
+    display: flex;
+    gap: 2rem;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    /* Espaçamento entre os grupos de campos */
 }
