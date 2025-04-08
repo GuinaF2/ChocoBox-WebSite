@@ -390,7 +390,7 @@ figure img {
     position: relative;
     border-radius: 10px;
 }
-
+ 
 .carrossel-container img,
 .carrossel-paises img,
 .carrossel img {
@@ -543,6 +543,7 @@ footer .footer-container {
 
 .comentarios-clientes .comentario {
     margin-bottom: 15px;
+    border-left: #3b8fa2 solid 10px;
     /* Espaçamento entre os comentários */
     padding: 10px;
     /* Barra de destaque à esquerda */
