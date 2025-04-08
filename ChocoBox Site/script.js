@@ -79,3 +79,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(moveCarousel, 3000); // Troca de imagem a cada 3 segundos
 });
+
+//* nao vai**//
