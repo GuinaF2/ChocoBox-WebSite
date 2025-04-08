@@ -365,7 +365,7 @@ figure img {
     /* Justifica o texto */
 }
 
-
+.gastronomia-container,
 .paises-container,
 .carrossel-container {
     display: flex 1;
@@ -378,6 +378,7 @@ figure img {
     margin: 20px 0;
 }
 
+.carrossel-container,
 .carrossel-paises,
 .carrossel {
     height: 30rem;
@@ -390,6 +391,7 @@ figure img {
     border-radius: 10px;
 }
 
+.carrossel-container img,
 .carrossel-paises img,
 .carrossel img {
     width: 100%;
@@ -411,9 +413,15 @@ figure img {
 }
 
 .paises-container p {
-    font-size: 1rem;
+    font-size: 2rem;
+    color: #6B705C;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+    font-family: Aptos;
 }
 
+.carrossel-container img.active,
 .carrossel-paises img.active,
 .carrossel img.active {
     opacity: 1;
@@ -1020,7 +1028,7 @@ iframe {
 .texto1 {
     flex: 1;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 20px;
+    font-size: 2rem;
     /* Tamanho da fonte */
     line-height: 1.5;
     /* Altura da linha para melhor legibilidade */
