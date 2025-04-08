@@ -527,16 +527,28 @@ footer .footer-info{
 }
 footer .links-social-container{
     display: grid;
+    text-align: center;
 }
 
 footer .logo img {
-    max-width: 200px;
+    max-width: 150px;
     /* Tamanho da logo */
-    max-height: 200px;
-    height: 45%;
+    max-height: 150px;
+    height: 35%;
+    width: 35%;
+    /* Mantém a proporção da imagem */
+}
+
+
+footer .logo-site img {
+    max-width: 350px;
+    /* Tamanho da logo */
+    max-height: 350px;
+    height: 35%;
     width: 45%;
     /* Mantém a proporção da imagem */
 }
+
 
 footer .footer-social {
     display: flex;
