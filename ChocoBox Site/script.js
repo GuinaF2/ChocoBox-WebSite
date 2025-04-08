@@ -201,3 +201,189 @@ searchInput.addEventListener('input', function() {
 
 // Renderizar todas as comidas inicialmente
 renderFoods(foods);
+
+
+//Script De Entrada do Formulario
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('orcamentoForm');
+    const modal = document.getElementById('confirmationModal');
+    const closeModal = document.querySelector('.close');
+    const confirmBtn = document.getElementById('confirmBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const telefoneInput = document.getElementById('telefone');
+
+    // Máscara para telefone
+    telefoneInput.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, '');
+        
+        if (value.length > 11) {
+            value = value.substring(0, 11);
+        }
+        
+        if (value.length > 0) {
+            value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7, 11)}`;
+        }
+        
+        e.target.value = value;
+    });
+
+    // Validação em tempo real
+    form.querySelectorAll('input').forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            if (this.classList.contains('invalid')) {
+                validateField(this);
+            }
+        });
+    });
+
+    // Função de validação de campo
+    function validateField(field) {
+        const errorElement = document.getElementById(`${field.id}-error`);
+        
+        if (field.required && !field.value.trim()) {
+            showError(field, errorElement, 'Este campo é obrigatório');
+            return false;
+        }
+        
+        if (field.type === 'email' && !isValidEmail(field.value)) {
+            showError(field, errorElement, 'Por favor, insira um email válido');
+            return false;
+        }
+        
+        if (field.id === 'telefone' && !isValidPhone(field.value)) {
+            showError(field, errorElement, 'Por favor, insira um telefone válido');
+            return false;
+        }
+        
+        if ((field.id === 'dataIda' || field.id === 'dataVolta') && !isValidDate(field)) {
+            showError(field, errorElement, 'Por favor, insira uma data válida');
+            return false;
+        }
+        
+        if (field.id === 'dataVolta' && !isValidReturnDate()) {
+            showError(field, errorElement, 'A data de volta deve ser após a data de ida');
+            return false;
+        }
+        
+        showSuccess(field, errorElement);
+        return true;
+    }
+
+    // Funções auxiliares de validação
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function isValidPhone(phone) {
+        const digits = phone.replace(/\D/g, '');
+        return digits.length >= 10 && digits.length <= 11;
+    }
+
+    function isValidDate(dateField) {
+        if (!dateField.value) return false;
+        
+        const date = new Date(dateField.value);
+        const minDate = new Date(dateField.min);
+        const maxDate = new Date(dateField.max);
+        
+        return date >= minDate && date <= maxDate;
+    }
+
+    function isValidReturnDate() {
+        const dataIda = document.getElementById('dataIda');
+        const dataVolta = document.getElementById('dataVolta');
+        
+        if (!dataIda.value || !dataVolta.value) return true;
+        
+        return new Date(dataVolta.value) >= new Date(dataIda.value);
+    }
+
+    // Mostrar erro/sucesso
+    function showError(field, errorElement, message) {
+        field.classList.add('invalid');
+        field.classList.remove('valid');
+        errorElement.textContent = message;
+    }
+
+    function showSuccess(field, errorElement) {
+        field.classList.remove('invalid');
+        field.classList.add('valid');
+        errorElement.textContent = '';
+    }
+
+    // Envio do formulário
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let isValid = true;
+        form.querySelectorAll('input').forEach(input => {
+            if (!validateField(input)) {
+                isValid = false;
+            }
+        });
+        
+        if (isValid) {
+            showConfirmation();
+        }
+    });
+
+    // Mostrar confirmação
+    function showConfirmation() {
+        const formData = new FormData(form);
+        const confirmationData = document.getElementById('confirmationData');
+        
+        let html = `
+            <p><strong>Nome:</strong> ${formData.get('nome')} ${formData.get('sobrenome')}</p>
+            <p><strong>Email:</strong> ${formData.get('email')}</p>
+            <p><strong>Telefone:</strong> ${formData.get('telefone')}</p>
+            <p><strong>Destino:</strong> ${formData.get('destino')}</p>
+            <p><strong>Data de ida:</strong> ${formatDate(formData.get('dataIda'))}</p>
+            <p><strong>Data de volta:</strong> ${formatDate(formData.get('dataVolta'))}</p>
+        `;
+        
+        confirmationData.innerHTML = html;
+        modal.style.display = 'block';
+    }
+
+    // Formatar data
+    function formatDate(dateString) {
+        if (!dateString) return '';
+        const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        return new Date(dateString).toLocaleDateString('pt-BR', options);
+    }
+
+    // Fechar modal
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    confirmBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        form.reset();
+        form.querySelectorAll('input').forEach(input => {
+            input.classList.remove('valid', 'invalid');
+            document.getElementById(`${input.id}-error`).textContent = '';
+        });
+        alert('Obrigado! Seu orçamento foi recebido e em breve entraremos em contato.');
+    });
+
+    // Resetar formulário
+    resetBtn.addEventListener('click', function() {
+        form.querySelectorAll('input').forEach(input => {
+            input.classList.remove('valid', 'invalid');
+            document.getElementById(`${input.id}-error`).textContent = '';
+        });
+    });
+
+    // Fechar modal ao clicar fora
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

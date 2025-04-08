@@ -1,21 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+p{
+    font-size: 1.1rem;
+}
+
+
+h1{
+    font-size: 2.1rem;
+    color: #333;
+}
+
+h2{
+    font-size: 1.9rem;
+    color: #333;
+}
+h3{
+    font-size: 1.7rem;
+    color: #333;
+}
+h4{
+    font-size: 1.5rem;
+    color: #333;
+}
+h5{
+    font-size: 1.3rem;
+    color: #333;
+}
+
+
+
 body {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #cbcbc2;
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 main {
     width: 95%;
     padding: 15px;
     overflow: auto;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 header {
@@ -24,8 +56,9 @@ header {
     display: flex;
     justify-content: center;
     padding: 15px;
-    background-color: #282b1d;
+    background-color: #838a6d;
     border-bottom: 0.125rem solid #ccc;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .otherpages {
@@ -58,13 +91,14 @@ header .search {
 
 header label {
     font-size: 1rem;
-    color: #714320;
+    color: #333;
     font-weight: bold;
     text-align: center;
 }
 
 header .search-bar {
     width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,8 +119,14 @@ header .menu {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+    text-align: center;
     margin: 0;
     gap: 3rem;
+}
+
+header .menu h2{
+
+    color: #3f392c;
 }
 
 header .menu a {
@@ -99,6 +139,7 @@ header .menu a {
 
 header .menu a:hover {
     color: #fff;
+    background-color: #e1e5e0;
 }
 
 header .orcamento {
@@ -190,7 +231,6 @@ figure img {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vendas-form button {
@@ -277,7 +317,7 @@ figure img {
 }
 
 .itens-venda li {
-    background-color: #FFE8D6;
+    background-color: #e1e5e0;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -293,7 +333,7 @@ figure img {
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    background-color: #FFE8D6;
+    background-color: #e1e5e0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -308,32 +348,40 @@ figure img {
     gap: 15px;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
+
 .news-card {
     display: flex;
-    flex: 1;
+    flex:1;
+    margin: 2px;
+    overflow: hidden;
+    border-radius: 25px;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e1e5e0 ;
     padding: 15px;
+    height: 50%;
     width: 100%;
+    max-width: 10px;
+    max-height: 400px;
 }
 
 .news-card img {
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
     border-radius: 0.5rem;
 }
 
 .news-card a {
     text-decoration: none;
-    color: #CB997E;
+    color: #282b1d;
     font-size: 1rem;
     font-weight: bold;
-    padding: 0.625rem 0.9375rem;
-    border: 0.125rem solid #CB997E;
     border-radius: 0.3125rem;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -465,30 +513,16 @@ figure img {
     /* Apenas a imagem ativa será visível */
 }
 
-section .descricaopage {
-    background-color: rgba(107, 112, 92, 0.8);
-    font-size: 1.5rem;
-    font-family: monospace;
-    color: #ffe8d6;
-    border-radius: 0.625rem;
-    text-align: center;
-}
 
-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 1.25rem 0;
-    color: #ffe8d6;
-}
 
 .orcamento-redirect {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #8e9481;
+    background-color: #e1e5e0;
     padding: 1rem;
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
     margin-top: 1rem;
     gap: 2rem;
 }
@@ -499,9 +533,20 @@ section h2 {
     color: black;
     padding: 0.625rem 0.9375rem;
     border-radius: 0.3125rem;
-    background-color: #cbcbc2;
+    background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
+    
 }
+
+.orcamento-redirect a:hover{
+
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    background-color: #aeaeae;
+}
+
+
 
 footer {
     width: 100%;
@@ -511,6 +556,7 @@ footer {
     padding: 15px;
     background-color: #fff;
     border-top: 0.125rem solid #ccc;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 footer .footer-container {
@@ -621,7 +667,7 @@ footer .footer-social {
 .itens-venda-container .vendas-form {
     display: grid;
     flex: 1;
-    background-color: #FFE8D6;
+    background-color: #e1e5e0;
     gap: 5px;
     /* Uma coluna */
     padding: 10px;
@@ -636,7 +682,7 @@ footer .footer-social {
 }
 
 .alfandega-info {
-    background-color: #FFE8D6;
+    background-color: #e1e5e0;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -647,7 +693,6 @@ footer .footer-social {
     line-height: 1.6;
     color: #333;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .descricao1 {
@@ -658,7 +703,6 @@ footer .footer-social {
     color: #8e9481;
     /* Cor do texto */
     text-align: justify;
-    font-family: Aptos;
 }
 
 .banner {
@@ -705,22 +749,6 @@ iframe {
     max-width: fit-content;
     max-height: fit-content;
 }
-
-.formulario label {
-    font-size: 1.3rem;
-    color: #3b8fa2;
-    margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.formulario input {
-    padding: 0.5rem;
-    border-radius: 0.4rem;
-    font-size: 0.9rem;
-    border: 1px solid #ccc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .map-pais {
     display: flex;
     /* Usa Flexbox para organizar os elementos */
@@ -738,51 +766,155 @@ iframe {
     /* Sombra ao redor do contêiner */
 }
 
+/* Estilos do formulário */
 .formulario {
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    flex-direction: column;
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    align-content: center;
-    /* Centraliza os elementos horizontalmente */
-    padding: 2.4rem;
-    /* Espaçamento interno */
-    background-color: #f9f9f9;
-    /* Cor de fundo */
-    border-radius: 1rem;
-    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.formulario .form-solo {
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    flex-direction: column;
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    /* Centraliza os elementos horizontalmente */
-    margin-bottom: 20px;
-    /* Espaçamento entre os grupos de campos */
+.formulario h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
 }
 
-.formulario .form-group {
-    display: flexbox;
-    /* Usa Flexbox para organizar os elementos */
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    /* Centraliza os elementos horizontalmente */
-    margin-bottom: 20px;
-    /* Espaçamento entre os grupos de campos */
+.form-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.formulario .form-botao {
+.input-group {
+    flex: 1;
     display: flex;
-    gap: 2rem;
-    /* Usa Flexbox para organizar os elementos */
     flex-direction: column;
-    /* Centraliza os elementos horizontalmente */
-    margin-bottom: 20px;
-    /* Espaçamento entre os grupos de campos */
+}
+
+.form-solo {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    height: 1rem;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"],
+#confirmBtn {
+    background-color: #3498db;
+    color: white;
+}
+
+input[type="submit"]:hover,
+#confirmBtn:hover {
+    background-color: #2980b9;
+}
+
+input[type="reset"] {
+    background-color: #95a5a6;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #7f8c8d;
+}
+
+/* Modal de confirmação */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#confirmationData {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+}
+
+/* Validação visual */
+input.invalid {
+    border-color: #e74c3c;
+}
+
+input.valid {
+    border-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 @media (min-width: 376px) {
@@ -813,6 +945,7 @@ iframe {
         border-radius: 10px;
         /* Bordas arredondadas */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
         /* Sombra ao redor do contêiner */
     }
     .news-card-mainpage,
@@ -869,6 +1002,8 @@ iframe {
         /* Organiza os elementos em coluna */
         align-items: center;
         gap: 10px;
+        background-color: transparent;
+
         /* Centraliza os elementos horizontalmente */
         padding: 20px;
         /* Espaçamento interno */
@@ -1073,7 +1208,6 @@ iframe {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
-    font-family: Aptos;
 }
 
 
@@ -1279,7 +1413,6 @@ iframe {
     color: #8e9481;
     margin: 0;
     text-align: center;
-    font-family: 'Georgia', serif;
 }
 
 .imagemponto {

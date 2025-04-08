@@ -2,9 +2,11 @@
 <html lang="pt-BR">
   
 <head> 
-  <meta charset = "UTF-8"></meta>  
+  <meta charset = "UTF-8">
   <link rel="stylesheet" href="style.css">
-    <title> Orçamento </title>
+  <title> Orçamento </title>
+  <link rel="icon" type="icon-title" href="Resources/logo.png">
+  <script src="script.js"> </script>
 </head>
 
 <body>
@@ -32,84 +34,111 @@
       <main>
         <div class="formulario">
           <h1>Solicite um Orçamento</h1>
-            <form >
+          <form id="orcamentoForm">
               <div class="form-group">
-                <label for="nome">Nome
-                <input type="text" id="nome" name="nome" required placeholder="João">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" id="nome" name="nome" required placeholder="Silva">
+                  <div class="input-group">
+                      <label for="nome">Nome</label>
+                      <input type="text" id="nome" name="nome" required placeholder="João">
+                      <span class="error-message" id="nome-error"></span>
+                  </div>
+                  <div class="input-group">
+                      <label for="sobrenome">Sobrenome</label>
+                      <input type="text" id="sobrenome" name="sobrenome" required placeholder="Silva">
+                      <span class="error-message" id="sobrenome-error"></span>
+                  </div>
               </div>
+              
               <div class="form-solo">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                  <span class="error-message" id="email-error"></span>
               </div>
+              
               <div class="form-solo">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                  <span class="error-message" id="telefone-error"></span>
               </div>
+              
               <div class="form-solo">
-                <label for="destino">Destino</label>
-                <input type="text" id="destino" name="destino" placeholder="Ex: São Paulo" required>
+                  <label for="destino">Destino</label>
+                  <input type="text" id="destino" name="destino" placeholder="Ex: São Paulo" required>
+                  <span class="error-message" id="destino-error"></span>
               </div>
-                <div class="form-group">
-
-                <label for="data">Data da ida</label>
-                <input type="date" min="2025-04-07" max="2025-12-29" id="data" name="data" required>
-
-                <label for="data">Data da volta</label>
-                <input type="date" min="2025-04-07" max="2026-01-01" id="data" name="data" required>
-                </div>
-                <div class="form-botao">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-                </div>
-            </form>
-        </div>
-  </main>
-  <footer> 
-    <div class="footer-container">
-      <nav> 
-        <a href="">Viagens</a>
-        <a href="">Parceiros</a>
-        <a href="">Contatos</a>
-      </nav> 
-    
-      <div class="footer-info">
-        <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
-        <p>Entre em contato: <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
-        <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+              
+              <div class="form-group">
+                  <div class="input-group">
+                      <label for="dataIda">Data da ida</label>
+                      <input type="date" min="2025-04-07" max="2025-12-29" id="dataIda" name="dataIda" required>
+                      <span class="error-message" id="dataIda-error"></span>
+                  </div>
+                  <div class="input-group">
+                      <label for="dataVolta">Data da volta</label>
+                      <input type="date" min="2025-04-07" max="2026-01-01" id="dataVolta" name="dataVolta" required>
+                      <span class="error-message" id="dataVolta-error"></span>
+                  </div>
+              </div>
+              
+              <div class="form-botao">
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Limpar" id="resetBtn">
+              </div>
+          </form>
+          
+          <div id="confirmationModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Orçamento Solicitado com Sucesso!</h2>
+                  <div id="confirmationData"></div>
+                  <button id="confirmBtn">Confirmar</button>
+              </div>
+          </div>
       </div>
-
-      <div class="links-social-container">
-        <div class="footer-links">
-          <nav>
-            <a href="#">Viagens</a>
-            <a href="#">Parceiros</a>
-            <a href="#">Contatos</a>
-            <a href="#">Sobre Nós</a>
-          </nav>
+  </main>
+   <footer> 
+      <div class="footer-container">
+        <nav> 
+          <a href="">Viagens</a>
+          <a href="">Parceiros</a>
+          <a href="">Contatos</a>
+        </nav> 
+      
+        <div class="footer-info">
+          <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
+          <p>Entre em contato: <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
+          <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
         </div>
 
-        <div class="footer-social">
-          <div class="logo">
-            <a href="https://www.facebook.com" target="_blank">
-              <img src="Resources/facebook-icon.png" alt="Facebook">
-            </a>
+        <div class="links-social-container">
+          <div class="footer-links">
+            <nav>
+              <a href="#">Viagens</a>
+              <a href="#">Parceiros</a>
+              <a href="#">Contatos</a>
+              <a href="#">Sobre Nós</a>
+            </nav>
           </div>
-          <div class="logo">
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="Resources/instagram-icon.png" alt="Instagram">
-            </a>
+
+          <div class="footer-social">
+            <div class="logo">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="Resources/facebook-icon.png" alt="Facebook">
+              </a>
+            </div>
+            <div class="logo">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="Resources/instagram-icon.png" alt="Instagram">
+              </a>
+            </div>
+            <div class="logo">
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="Resources/twitter-icon.png" alt="Twitter">
+              </a>
+            </div>
           </div>
-          <div class="logo">
-            <a href="https://www.twitter.com" target="_blank">
-              <img src="Resources/twitter-icon.png" alt="Twitter">
-            </a>
-          </div>
-        </div>
+      </div>
     </div>
-  </div>
-  </footer> 
+    </footer> 
 </body>
 
 </html>
