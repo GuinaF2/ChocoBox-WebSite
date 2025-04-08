@@ -164,7 +164,22 @@ li {
 /*pag paises*/
 
 
-.descricao1 {
+
+.carrossel {
+    border: #3b8fa2 solid 12px;
+    height: 30rem;
+    max-height: 192rem;
+    width: 50rem;
+    max-width: 108rem;
+    align-self: baseline;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+   
+}
+
+
+.descricao1 { 
     font-size: 2rem;
     /* Tamanho da fonte */
     line-height: 1.6;
@@ -173,39 +188,22 @@ li {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
+    border: #3b8fa2 solid 12px;
 }
 
-.carrossel-container {
+.carrossel .carrossel-container {
     display: flex;
-    grid-template-rows: 1fr 1fr;
-    /* Organiza os elementos em linha */
+    flex:1;
+    /* Usa Flexbox para organizar as imagens */
+    flex-direction: row;
+    /* Organiza as imagens em linha */
     align-items: center;
-    /* Alinha verticalmente */
-    gap: 2rem;
-    /* Espaço entre o carrossel e o texto */
-    margin: 20px 0;
-   
+    /* Centraliza as imagens verticalmente */
+    justify-content: space-between;
+    /* Centraliza as imagens horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre as imagens */
 }
-
-.carrossel {
-    flex: 1;
-    /* O carrossel ocupa o espaço disponível */
-    /* Largura máxima do carrossel */
-    height: 30rem;
-    max-height: 500px;
-    width: 50rem;
-    align-self: baseline;
-    /* Altura fixa */
-    overflow: hidden;
-    /* Esconde as imagens fora do contêiner */
-    position: relative;
-    /* Necessário para posicionar as imagens */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombra */
-}
-
 .carrossel img {
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
@@ -225,22 +223,6 @@ li {
     /* Melhora a qualidade da imagem */
 }
 
-.carrossel-cidade{
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    flex-direction: column;
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    /* Centraliza os elementos horizontalmente */
-    padding: 20px;
-    /* Espaçamento interno */
-    background-color: #FFE8D6;
-    /* Cor de fundo */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra ao redor do carrossel */
-}
 
 .carrossel img.active {
     opacity: 1;
@@ -372,6 +354,8 @@ footer .footer-social {
     /* Sombra ao redor do contêiner */
 }
 
+
+
 .itens-venda-container .itens-venda {
     /* Borda ao redor do contêiner */
     flex: 1;
@@ -466,7 +450,40 @@ footer .footer-social {
 }
 
 
+.descricao1{
+    font-size: 1.25rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #8e9481;
+    /* Cor do texto */
+    text-align: justify;
+    font-family: Aptos;
+    border: #3b8fa2 solid 12px;
+}
+
+.carrossel-cidade{
+    
+    display: flex;
+    flex-direction: row;
+    
+    /* Alinha os itens lado a lado */
+
+    /* Alinha os itens ao topo */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    gap: 20px;
+    /* Espaçamento entre o carrossel e o texto */
+    margin: 20px 0;
+    /* Centraliza o contêiner na página */
+    /* Define uma largura máxima */
+
+
+}
+
 .descricao2 {
+    display: flex;
+    flex: 1;
     font-size: 2rem;
     /* Tamanho da fonte */
     line-height: 1.6;
@@ -475,7 +492,9 @@ footer .footer-social {
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
+    border: #3b8fa2 solid 12px;
 }
+
 
 
 /* Estilo para o título "E o clima?" */
