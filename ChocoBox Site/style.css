@@ -420,6 +420,27 @@ section h2 {
     color: #ffe8d6;
 }
 
+.orcamento-redirect{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #8e9481;
+    padding: 1rem;
+    border-radius: 0.1rem;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+.orcamento-redirect a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.3125rem;
+    background-color: #cbcbc2;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 
 footer {
     width: 100%;
