@@ -365,7 +365,7 @@ figure img {
     /* Justifica o texto */
 }
 
-.irlanda-container,
+.paises-container,
 .carrossel-container {
     display: flex 1;
     grid-template-rows: 1fr 1fr;
@@ -377,7 +377,7 @@ figure img {
     margin: 20px 0;
 }
 
-.carrossel-irlanda,
+.carrossel-paises,
 .carrossel {
     height: 30rem;
     max-height: 192rem;
@@ -389,7 +389,7 @@ figure img {
     border-radius: 10px;
 }
 
-.carrossel-irlanda img,
+.carrossel-paises img,
 .carrossel img {
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
@@ -409,11 +409,11 @@ figure img {
     /* Melhora a qualidade da imagem */
 }
 
-.irlanda-container p {
+.paises-container p {
     font-size: 1rem;
 }
 
-.carrossel-irlanda img.active,
+.carrossel-paises img.active,
 .carrossel img.active {
     opacity: 1;
     /* Apenas a imagem ativa será visível */
