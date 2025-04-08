@@ -365,6 +365,7 @@ figure img {
     /* Justifica o texto */
 }
 
+
 .paises-container,
 .carrossel-container {
     display: flex 1;
@@ -482,9 +483,9 @@ footer .footer-container {
     gap: 15px;
 }
 
+
 .comentarios-clientes {
     display: flex 1;
-    /* Usa Flexbox para organizar os elementos */
     /* O contêiner ocupa o espaço disponível */
     background-color: none;
     /* Fundo transparente */
@@ -496,6 +497,7 @@ footer .footer-container {
 
 .comentarios-clientes .comentario {
     margin-bottom: 15px;
+    border-left: #3b8fa2 solid 10px;
     /* Espaçamento entre os comentários */
     padding: 10px;
     /* Barra de destaque à esquerda */
