@@ -221,7 +221,6 @@ figure img {
     background-color: #b3866d;
 }
 
-
 .vendas-form textarea {
     min-height: 100px;
     resize: vertical;
@@ -313,9 +312,6 @@ figure img {
     margin: 10px 0;
 }
 
-
-
-
 .news-card-container {
     display: flex;
     flex-direction: column;
@@ -330,8 +326,7 @@ figure img {
 
 .news-card {
     display: flex;
-    flex:1;
-
+    flex: 1;
     flex-direction: column;
     align-items: center;
     padding: 15px;
@@ -344,7 +339,7 @@ figure img {
     border-radius: 0.5rem;
 }
 
-.news-card a{
+.news-card a {
     text-decoration: none;
     color: #CB997E;
     font-size: 1rem;
@@ -355,19 +350,19 @@ figure img {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-.news-image-container{
+.news-image-container {
     background-image: url("Resources/travel-bg.jpg");
     height: 20rem;
     width: 100%;
     max-width: 1920px;
     max-height: 1080px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size:contain;
+    background-size: contain;
     box-shadow: #333 0px 0px 10px;
 }
+
 
 /*pag paises*/
 
@@ -452,7 +447,7 @@ section h2 {
     color: #ffe8d6;
 }
 
-.orcamento-redirect{
+.orcamento-redirect {
     display: flex;
     text-align: center;
     align-items: center;
@@ -463,7 +458,8 @@ section h2 {
     margin-top: 1rem;
     gap: 2rem;
 }
-.orcamento-redirect a{
+
+.orcamento-redirect a {
     text-decoration: none;
     font-size: 1rem;
     color: black;
@@ -472,7 +468,6 @@ section h2 {
     background-color: #cbcbc2;
     transition: background-color 0.3s, color 0.3s;
 }
-
 
 footer {
     width: 100%;
@@ -484,7 +479,6 @@ footer {
     border-top: 0.125rem solid #ccc;
 }
 
-
 footer .footer-container {
     width: 100%;
     display: flex;
@@ -492,6 +486,7 @@ footer .footer-container {
     gap: 1.5rem;
     align-items: center;
 }
+
 .linha {
     display: flex;
     flex-direction: column;
@@ -542,24 +537,22 @@ footer .footer-container {
     font-style: italic;
 }
 
-
-footer .footer-info{
+footer .footer-info {
     font-size: 20px;
 }
-footer .links-social-container{
+
+footer .links-social-container {
     display: grid;
     text-align: center;
 }
 
 footer .logo img {
-    
     /* Tamanho da logo */
     max-height: 150px;
     height: 35%;
     width: 35%;
     /* Mantém a proporção da imagem */
 }
-
 
 footer .logo-site img {
     max-width: 350px;
@@ -570,12 +563,10 @@ footer .logo-site img {
     /* Mantém a proporção da imagem */
 }
 
-
 footer .footer-social {
     display: flex;
     align-items: center;
 }
-
 
 .itens-venda-container {
     display: flex;
@@ -583,6 +574,7 @@ footer .footer-social {
     flex-direction: column;
     gap: 2rem;
 }
+
 .itens-venda-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -596,7 +588,6 @@ footer .footer-social {
     flex: 1;
     background-color: #FFE8D6;
     gap: 5px;
-
     /* Uma coluna */
     padding: 10px;
     /* Espaçamento interno */
@@ -606,7 +597,6 @@ footer .footer-social {
     /* Altura fixa */
     /* Esconde as imagens fora do contêiner */
     /* Necessário para posicionar as imagens */
- 
     /* Adiciona sombra */
 }
 
@@ -764,71 +754,60 @@ iframe {
     body {
         font-size: 1.1rem;
     }
-    
     header .header-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
     header .menu {
         flex-direction: row;
         order: 1;
         width: 100%;
     }
-    
     .news-card-mainpage {
-    display: flex;
-    /* Usa Flexbox para organizar os elementos */
-    flex-direction: row;
-    /* Organiza os elementos em coluna */
-    align-items: center;
-    gap: 10px;
-    /* Centraliza os elementos horizontalmente */
-    padding: 20px;
-    /* Espaçamento interno */
-    /* Cor de fundo */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra ao redor do contêiner */
+        display: flex;
+        /* Usa Flexbox para organizar os elementos */
+        flex-direction: row;
+        /* Organiza os elementos em coluna */
+        align-items: center;
+        gap: 10px;
+        /* Centraliza os elementos horizontalmente */
+        padding: 20px;
+        /* Espaçamento interno */
+        /* Cor de fundo */
+        border-radius: 10px;
+        /* Bordas arredondadas */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra ao redor do contêiner */
     }
-
     .news-card-mainpage,
     .news-card-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .news-card {
         width: 45%;
     }
-    
     footer .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
     .linha {
         flex-direction: row;
     }
-
     .news-card-mainpage {
         grid-template-columns: 1fr;
         padding: 0.5rem;
         gap: 0.5rem;
     }
-    
     .news-card {
         max-width: 100%;
     }
-    
     .news-card img {
         height: 180px;
     }
-    
     .news-card h2 {
         font-size: 1.3rem;
     }
@@ -838,88 +817,68 @@ iframe {
     body {
         font-size: 1.2rem;
     }
-    
     main {
         width: 90%;
         padding: 20px;
     }
-    
     header .header-container {
         flex-wrap: nowrap;
     }
-    
     header .menu {
         order: 0;
         width: auto;
     }
-    
     .news-card {
         width: 30%;
     }
-    
     .pontoReferencia,
     .itens-venda-wrapper {
         grid-template-columns: 1fr;
     }
-    
     .carrossel-container {
         flex-direction: column;
     }
-    
     .descricao1 {
         font-size: 1.1rem;
     }
-
     .news-card-mainpage {
         grid-template-columns: repeat(2, 1fr);
     }
-    
     .news-card img {
         height: 220px;
     }
-    
-
 }
 
 @media (min-width: 992px) {
     body {
         font-size: 1.3rem;
     }
-    
     main {
         width: 85%;
     }
-    
     .news-card {
         width: 22%;
     }
-    
     .pontoReferencia,
     .itens-venda-wrapper {
         grid-template-columns: 1fr 1fr;
     }
-    
     .carrossel-container {
         flex-direction: row;
     }
-    
     .descricao1 {
         font-size: 1.2rem;
     }
-
     .news-card-mainpage {
         grid-template-columns: repeat(3, 1fr);
     }
-    
     .news-card img {
         height: 250px;
     }
-    
     .news-card h2 {
         font-size: 1.5rem;
     }
-
-    .news-card-mainpage{
+    .news-card-mainpage {
         flex-direction: row;
     }
 }
@@ -928,30 +887,24 @@ iframe {
     body {
         font-size: 1.4rem;
     }
-    
     main {
         max-width: 1200px;
     }
-    
     header .header-container {
         max-width: 1200px;
     }
-    
     footer .footer-container {
         max-width: 1200px;
     }
-    
     .descricao1 {
         font-size: 1.3rem;
     }
-    
 }
 
 @media (min-width: 1440px) {
     body {
         font-size: 1.5rem;
     }
-    
     main {
         max-width: 1400px;
     }
@@ -961,31 +914,71 @@ iframe {
     body {
         font-size: 1.8rem;
     }
-    
     main {
         max-width: 1800px;
     }
 }
 
+
 /* Grid adjustments for larger screens */
+
 @media (min-width: 992px) {
     .itens-venda-wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    
     .vendas-form {
         grid-template-columns: 1fr;
     }
 }
 
-
 @media (min-width: 768px) {
     .hidden-mobile {
         display: block;
     }
-    
     .hidden-desktop {
         display: none;
     }
+}
+
+
+/*PAGINA PAISES*/
+
+.carrossel-container {
+    display: flex;
+    /* Alinha os itens lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    gap: 20px;
+    /* Espaçamento entre o carrossel e o texto */
+    margin: 20px 0;
+    /* Espaçamento externo */
+}
+
+.carrossel1 {
+    flex-shrink: 0;
+    /* Impede que o carrossel encolha */
+    width: 50%;
+    /* Define a largura do carrossel */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+}
+
+.texto1 {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }
