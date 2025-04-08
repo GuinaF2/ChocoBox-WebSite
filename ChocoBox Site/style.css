@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
     background-color: #cbcbc2;
     /* Cor de fundo */
@@ -177,6 +177,93 @@ li {
     font-family: 'Georgia', serif;
 }
 
+.main-container{
+    border: #CB997E solid 12px;
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #FFE8D6;
+    /* Cor de fundo */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor do contêiner */
+}
+.news-card-container {
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: row;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    gap: 20px;
+    /* Centraliza os elementos horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #FFE8D6;
+    /* Cor de fundo */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor do contêiner */
+}
+
+.news-card{
+    display: flex;
+    /* Usa Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    align-items: center;
+    /* Centraliza os elementos horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #FFE8D6;
+    /* Cor de fundo */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor do contêiner */
+}
+
+.news-card img {
+    width: 100%;
+    /* A imagem ocupa toda a largura do contêiner */
+    max-width: 800px;
+    /* Largura máxima da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 0.5rem;
+    /* Bordas arredondadas */
+}
+
+.news-card a{
+    text-decoration: none;
+    color: #CB997E;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.625rem 0.9375rem;
+    border: 0.125rem solid #CB997E;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.news-image-container{
+    background-image: url("Resources/travel-bg.jpg");
+    height: 20rem;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:contain;
+    box-shadow: #333 0px 0px 10px;
+}
 
 /*pag paises*/
 
@@ -185,11 +272,10 @@ li {
     font-size: 1.7rem;
 }
 
-
 .descricao1 {
     border: #CB997E solid 12px;
     flex: 1;
-    justify-content:flex-start;
+    justify-content: flex-start;
     /* Faz o texto ocupar o espaço restante */
     font-size: 2.3rem;
     /* Tamanho da fonte */
@@ -210,7 +296,6 @@ li {
     gap: 2rem;
     /* Espaço entre o carrossel e o texto */
     margin: 20px 0;
-   
 }
 
 .carrossel {
@@ -224,21 +309,21 @@ li {
     border-radius: 10px;
 }
 
-.carrossel-cidade > *{
-    flex:1;
+.carrossel-cidade>* {
+    flex: 1;
 }
 
 .carrossel .carrossel-container {
-        display: flex;
-        flex-direction: row ;
-        font-size: 1.125rem;
-        line-height: 1.6;
-        color: #8e9481;
-        margin: 0;
-        text-align: center;
-        font-family: 'Georgia', serif;
-        
+    display: flex;
+    flex-direction: row;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #8e9481;
+    margin: 0;
+    text-align: center;
+    font-family: 'Georgia', serif;
 }
+
 .carrossel img {
     width: 100%;
     /* Cada imagem ocupa 100% da largura do carrossel */
@@ -257,7 +342,6 @@ li {
     image-rendering: pixelated;
     /* Melhora a qualidade da imagem */
 }
-
 
 .carrossel img.active {
     opacity: 1;
@@ -279,8 +363,6 @@ section h2 {
     margin: 1.25rem 0;
     color: #ffe8d6;
 }
-
-
 
 footer {
     display: flex;
@@ -319,7 +401,6 @@ footer {
     margin-top: 20px;
     /* Espaçamento superior */
 }
-
 
 .comentarios-clientes .comentario {
     margin-bottom: 15px;
@@ -387,8 +468,6 @@ ul .itens-venda-container {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Sombra ao redor do contêiner */
 }
-
-
 
 .itens-venda-container .itens-venda {
     /* Borda ao redor do contêiner */
@@ -545,7 +624,7 @@ ul .itens-venda-container {
     /* Justifica o texto */
 }
 
-.descricao1{
+.descricao1 {
     font-size: 1.25rem;
     /* Tamanho da fonte */
     line-height: 1.6;
@@ -556,13 +635,10 @@ ul .itens-venda-container {
     font-family: Aptos;
 }
 
-.carrossel-cidade{
-    
+.carrossel-cidade {
     display: flex;
     flex-direction: row;
-    
     /* Alinha os itens lado a lado */
-
     /* Alinha os itens ao topo */
     justify-content: space-between;
     /* Espaço entre os itens */
@@ -571,8 +647,6 @@ ul .itens-venda-container {
     margin: 20px 0;
     /* Centraliza o contêiner na página */
     /* Define uma largura máxima */
-
-
 }
 
 .descricao2 {
@@ -587,7 +661,6 @@ ul .itens-venda-container {
     text-align: justify;
     /* Justifica o texto */
 }
-
 
 
 /* Estilo para o título "E o clima?" */
@@ -620,7 +693,7 @@ p {
     /* Espaçamento abaixo do parágrafo */
 }
 
-.banner{
+.banner {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
@@ -633,48 +706,44 @@ p {
     /* Espaçamento interno */
     border-bottom: 2px solid #ccc;
     /* Linha inferior */
-   
 }
 
 iframe {
-    width:220rem ;
+    width: 220rem;
     /* Largura do iframe */
     height: 30rem;
-
     max-width: 1000px;
-
     max-height: 1400px;
     /* Altura do iframe */
     border: none;
     /* Remove a borda do iframe */
-
 }
 
-.banner .banner-imagem{
+.banner .banner-imagem {
     display: flexbox;
     flex-direction: column;
     justify-content: space-between;
-
     max-width: 90%;
 }
 
 .banner .banner-imagem img {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    max-width: 800px; /* Remove valores fixos */
-    height: auto; /* Mantém a proporção */
-    border-radius: 0.5rem; /* Usa rem para bordas arredondadas */
+    width: 100%;
+    /* A imagem ocupa toda a largura do contêiner */
+    max-width: 800px;
+    /* Remove valores fixos */
+    height: auto;
+    /* Mantém a proporção */
+    border-radius: 0.5rem;
+    /* Usa rem para bordas arredondadas */
 }
-.texto-banner{
+
+.texto-banner {
     flex: 1;
-    align-content:center;
+    align-content: center;
     text-align: center;
     max-width: fit-content;
     max-height: fit-content;
-    
 }
-
-
-
 
 .formulario label {
     font-size: 1.3rem;
@@ -686,16 +755,15 @@ iframe {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.formulario input{
+.formulario input {
     padding: 0.5rem;
     border-radius: 0.4rem;
     font-size: 0.9rem;
     border: 1px solid #ccc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-.map-pais{
+.map-pais {
     display: flex;
     /* Usa Flexbox para organizar os elementos */
     flex-direction: column;
@@ -728,7 +796,7 @@ iframe {
     gap: 2rem;
 }
 
-.formulario .form-solo{
+.formulario .form-solo {
     display: flex;
     /* Usa Flexbox para organizar os elementos */
     flex-direction: column;
@@ -739,7 +807,7 @@ iframe {
     /* Espaçamento entre os grupos de campos */
 }
 
-.formulario .form-group{
+.formulario .form-group {
     display: flexbox;
     /* Usa Flexbox para organizar os elementos */
     /* Organiza os elementos em coluna */
@@ -749,7 +817,7 @@ iframe {
     /* Espaçamento entre os grupos de campos */
 }
 
-.formulario .form-botao{
+.formulario .form-botao {
     display: flex;
     gap: 2rem;
     /* Usa Flexbox para organizar os elementos */
@@ -757,4 +825,68 @@ iframe {
     /* Centraliza os elementos horizontalmente */
     margin-bottom: 20px;
     /* Espaçamento entre os grupos de campos */
+}
+
+
+/*carrossel 1*/
+
+.carrossel-container1 {
+    display: flex;
+    /* Alinha os itens lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    gap: 20px;
+    /* Espaçamento entre o carrossel e o texto */
+    margin: 20px 0;
+    /* Espaçamento externo */
+}
+
+.carrossel1 {
+    flex-shrink: 0;
+    /* Impede que o carrossel encolha */
+    width: 50%;
+    /* Define a largura do carrossel */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+}
+
+.carrossel1 img.active {
+    opacity: 1;
+    /* Apenas a imagem ativa será visível */
+}
+
+.carrossel1 img {
+    flex-shrink: 0;
+    /* Impede que as imagens encolham */
+    width: 100%;
+    /* Cada imagem ocupa 100% da largura do carrossel */
+    height: 100%;
+    /* Ajusta a altura para preencher o carrossel */
+    object-fit: cover;
+    /* Ajusta a imagem sem distorção */
+    position: absolute;
+    /* Sobrepõe as imagens umas às outras */
+    opacity: 0;
+    /* Torna as imagens invisíveis por padrão */
+    transition: opacity 1s ease-in-out;
+    /* Transição suave entre imagens */
+}
+
+.carrossel-container1 p {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1.2rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
 }

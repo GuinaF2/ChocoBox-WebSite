@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".carrossel1 img");
     let currentIndex = 0;
