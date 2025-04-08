@@ -359,13 +359,12 @@ figure img {
     /* Tamanho da fonte */
     line-height: 1.7;
     /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
+    color: #282b1d;
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
 }
 
-.gastronomia-container,
 .paises-container,
 .carrossel-container {
     display: flex 1;
@@ -376,9 +375,10 @@ figure img {
     gap: 2rem;
     /* Espaço entre o carrossel e o texto */
     margin: 20px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
 }
 
-.carrossel-gastronomia,
 .carrossel-paises,
 .carrossel {
     height: 30rem;
@@ -390,7 +390,7 @@ figure img {
     position: relative;
     border-radius: 10px;
 }
- 
+
 .carrossel-container img,
 .carrossel-paises img,
 .carrossel img {
@@ -431,14 +431,14 @@ figure img {
     /* Melhora a qualidade da imagem */
 }
 
-.gastronomia-container p {
-    justify-content: flex-start;
+.descricao_gastronomia {
+    flex: 1;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 1.0rem;
+    font-size: 1rem;
     /* Tamanho da fonte */
-    line-height: 1;
+    line-height: 1.0;
     /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
+    color: #282b1d;
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
@@ -452,7 +452,7 @@ figure img {
     /* Tamanho da fonte */
     line-height: 0.9;
     /* Altura da linha para melhor legibilidade */
-    color: #4d543c;
+    color: #282b1d;
     /* Cor do texto */
     text-align: justify;
     /* Justifica o texto */
@@ -464,6 +464,51 @@ figure img {
     opacity: 1;
     /* Apenas a imagem ativa será visível */
 }
+
+
+/*teste*/
+
+.gastronomia-container {
+    display: flex;
+    /* Alinha os itens lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    gap: 20px;
+    /* Espaçamento entre o carrossel e o texto */
+    margin: 20px 0;
+    /* Espaçamento externo */
+}
+
+.carrossel-gastronomia {
+    flex-shrink: 0;
+    /* Impede que o carrossel encolha */
+    width: 50%;
+    /* Define a largura do carrossel */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    overflow: hidden;
+    /* Esconde partes das imagens fora do contêiner */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra */
+}
+
+.descricao_gastronomia {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    color: #282b1d;
+    /* Cor do texto */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+
+/*fim teste*/
 
 section .descricaopage {
     background-color: rgba(107, 112, 92, 0.8);
