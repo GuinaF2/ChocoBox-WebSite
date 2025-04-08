@@ -216,15 +216,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Máscara para telefone
     telefoneInput.addEventListener('input', function(e) {
         let value = e.target.value.replace(/\D/g, '');
-        
+
         if (value.length > 11) {
             value = value.substring(0, 11);
         }
-        
+
         if (value.length > 0) {
             value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7, 11)}`;
         }
-        
+
         e.target.value = value;
     });
 
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('blur', function() {
             validateField(this);
         });
-        
+
         input.addEventListener('input', function() {
             if (this.classList.contains('invalid')) {
                 validateField(this);
@@ -244,32 +244,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função de validação de campo
     function validateField(field) {
         const errorElement = document.getElementById(`${field.id}-error`);
-        
+
         if (field.required && !field.value.trim()) {
             showError(field, errorElement, 'Este campo é obrigatório');
             return false;
         }
-        
+
         if (field.type === 'email' && !isValidEmail(field.value)) {
             showError(field, errorElement, 'Por favor, insira um email válido');
             return false;
         }
-        
+
         if (field.id === 'telefone' && !isValidPhone(field.value)) {
             showError(field, errorElement, 'Por favor, insira um telefone válido');
             return false;
         }
-        
+
         if ((field.id === 'dataIda' || field.id === 'dataVolta') && !isValidDate(field)) {
             showError(field, errorElement, 'Por favor, insira uma data válida');
             return false;
         }
-        
+
         if (field.id === 'dataVolta' && !isValidReturnDate()) {
             showError(field, errorElement, 'A data de volta deve ser após a data de ida');
             return false;
         }
-        
+
         showSuccess(field, errorElement);
         return true;
     }
@@ -286,20 +286,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function isValidDate(dateField) {
         if (!dateField.value) return false;
-        
+
         const date = new Date(dateField.value);
         const minDate = new Date(dateField.min);
         const maxDate = new Date(dateField.max);
-        
+
         return date >= minDate && date <= maxDate;
     }
 
     function isValidReturnDate() {
         const dataIda = document.getElementById('dataIda');
         const dataVolta = document.getElementById('dataVolta');
-        
+
         if (!dataIda.value || !dataVolta.value) return true;
-        
+
         return new Date(dataVolta.value) >= new Date(dataIda.value);
     }
 
@@ -319,14 +319,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Envio do formulário
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-        
+
         let isValid = true;
         form.querySelectorAll('input').forEach(input => {
             if (!validateField(input)) {
                 isValid = false;
             }
         });
-        
+
         if (isValid) {
             showConfirmation();
         }
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function showConfirmation() {
         const formData = new FormData(form);
         const confirmationData = document.getElementById('confirmationData');
-        
+
         let html = `
             <p><strong>Nome:</strong> ${formData.get('nome')} ${formData.get('sobrenome')}</p>
             <p><strong>Email:</strong> ${formData.get('email')}</p>
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>Data de ida:</strong> ${formatDate(formData.get('dataIda'))}</p>
             <p><strong>Data de volta:</strong> ${formatDate(formData.get('dataVolta'))}</p>
         `;
-        
+
         confirmationData.innerHTML = html;
         modal.style.display = 'block';
     }

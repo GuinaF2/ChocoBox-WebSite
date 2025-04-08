@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-p{
+p {
     font-size: 1.1rem;
 }
 
-
-h1{
+h1 {
     font-size: 2.1rem;
     color: #333;
 }
 
-h2{
+h2 {
     font-size: 1.9rem;
     color: #333;
 }
-h3{
+
+h3 {
     font-size: 1.7rem;
     color: #333;
 }
-h4{
+
+h4 {
     font-size: 1.5rem;
     color: #333;
 }
-h5{
+
+h5 {
     font-size: 1.3rem;
     color: #333;
 }
-
-
 
 body {
     width: 100%;
@@ -124,8 +123,7 @@ header .menu {
     gap: 3rem;
 }
 
-header .menu h2{
-
+header .menu h2 {
     color: #3f392c;
 }
 
@@ -351,17 +349,16 @@ figure img {
     width: 100%;
 }
 
-
 .news-card {
     display: flex;
-    flex:1;
+    flex: 1;
     margin: 2px;
     overflow: hidden;
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #e1e5e0 ;
+    background-color: #e1e5e0;
     padding: 15px;
     height: 50%;
     width: 100%;
@@ -546,8 +543,6 @@ figure img {
 
 /*fim teste*/
 
-
-
 .orcamento-redirect {
     display: flex;
     text-align: center;
@@ -568,18 +563,14 @@ figure img {
     border-radius: 0.3125rem;
     background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
-    
 }
 
-.orcamento-redirect a:hover{
-
+.orcamento-redirect a:hover {
     text-decoration: none;
     font-size: 1rem;
     color: black;
     background-color: #aeaeae;
 }
-
-
 
 footer {
     width: 100%;
@@ -782,6 +773,7 @@ iframe {
     max-width: fit-content;
     max-height: fit-content;
 }
+
 .map-pais {
     display: flex;
     /* Usa Flexbox para organizar os elementos */
@@ -799,7 +791,9 @@ iframe {
     /* Sombra ao redor do contêiner */
 }
 
+
 /* Estilos do formulário */
+
 .formulario {
     max-width: 800px;
     margin: 0 auto;
@@ -900,7 +894,9 @@ input[type="reset"]:hover {
     background-color: #7f8c8d;
 }
 
+
 /* Modal de confirmação */
+
 .modal {
     display: none;
     position: fixed;
@@ -934,7 +930,9 @@ input[type="reset"]:hover {
     line-height: 1.6;
 }
 
+
 /* Validação visual */
+
 input.invalid {
     border-color: #e74c3c;
 }
@@ -1036,7 +1034,6 @@ input.valid {
         align-items: center;
         gap: 10px;
         background-color: transparent;
-
         /* Centraliza os elementos horizontalmente */
         padding: 20px;
         /* Espaçamento interno */
