@@ -2,11 +2,13 @@
 <html lang="pt-BR">
   
 <head> 
-  <meta charset = "UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça nossa equipe de especialistas em viagens e nossa missão de transformar suas experiências de viagem">
   <link rel="stylesheet" href="style.css">
-  <title> Sobre Nós </title>
-  <link rel="icon" type="icon-title" href="Resources/logo.png">
-  <script src="script.js"></script>
+  <title>Sobre Nós - Viagem Pelo Mundo</title>
+  <link rel="icon" href="Resources/logo.png">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,22 +22,20 @@
         <div class="otherpages"><a href="comida.html"><h2>Culinária</h2></a></div>
         <div class="otherpages"><a href="aboutus.html"><h2>Sobre Nós</h2></a></div>
         <div class="otherpages"><a href="paises.html"><h2>Países</h2></a></div>
-        <div class="otherpages"><a href="tips.html"><h2>Dicas</h2></a></div>
       </nav>
     </div>
   </header>
 
   <main>
-    
-    <section class="about-section">
+    <section class="about-section" aria-labelledby="sobre-nos-title">
         <div class="about-header">
-            <h2>Sobre Nós</h2>
+            <h1 id="sobre-nos-title">Sobre Nós</h1>
             <p class="subtitle">Conheça a equipe por trás das melhores dicas de viagem</p>
         </div>
     
         <div class="about-content">
-            <div class="about-mission">
-                <h3>Nossa Missão</h3>
+            <article class="about-mission" aria-labelledby="missao-title">
+                <h2 id="missao-title">Nossa Missão</h2>
                 <p>Somos apaixonados por viagens e acreditamos que cada jornada tem o poder de transformar vidas. Nosso objetivo é inspirar e capacitar viajantes com informações autênticas, dicas práticas e histórias que vão além dos guias convencionais.</p>
                 
                 <div class="mission-stats">
@@ -52,121 +52,113 @@
                         <span class="stat-label">Dicas Publicadas</span>
                     </div>
                 </div>
-            </div>
+            </article>
     
-            <div class="team-section">
-                <h3>Nossa Equipe</h3>
+            <section class="team-section" aria-labelledby="equipe-title">
+                <h2 id="equipe-title">Nossa Equipe</h2>
                 <p>Conheça os rostos por trás das melhores dicas e roteiros que compartilhamos.</p>
                 
                 <div class="team-grid">
-                    <div class="team-member">
-                        <img src="Resources/joaofoto.jpg" alt="Homem de óculos de braços cruzados sorridno para a " class="member-photo">
-                        <h4>João Silva</h4>
+                    <article class="team-member">
+                        <img src="Resources/joaofoto.jpg" alt="João Silva, homem de óculos de braços cruzados sorrindo para a câmera" class="member-photo">
+                        <h3>João Silva</h3>
                         <p class="member-role">Fundador e Editor-chefe</p>
                         <p class="member-bio">Jornalista com paixão por culturas locais. Já morou em 5 países diferentes e fala 4 idiomas.</p>
-                    </div>
+                    </article>
                     
-                    <div class="team-member">
-                        <img src="Resources/anasilva.jpg" alt="Mulher de casaco cinza sorrindo e pessoas ao fundo conversando" class="member-photo">
-                        <h4>Ana Soares</h4>
+                    <article class="team-member">
+                        <img src="Resources/anasilva.jpg" alt="Ana Soares, mulher de casaco cinza sorrindo com pessoas ao fundo conversando" class="member-photo">
+                        <h3>Ana Soares</h3>
                         <p class="member-role">Fotógrafa e Roteirista</p>
                         <p class="member-bio">Especialista em destinos de aventura. Já escalou montanhas em 3 continentes diferentes.</p>
-                    </div>
+                    </article>
                     
-                    <div class="team-member">
-                        <img src="Resources/juliana.jpg" alt="Mulher com uma camiseta rosa sorrindo" class="member-photo">
-                        <h4>Juliana Costa</h4>
+                    <article class="team-member">
+                        <img src="Resources/juliana.jpg" alt="Juliana Costa, mulher com uma camiseta rosa sorrindo" class="member-photo">
+                        <h3>Juliana Costa</h3>
                         <p class="member-role">Especialista em Gastronomia</p>
                         <p class="member-bio">Formada em gastronomia, busca os sabores mais autênticos em cada destino.</p>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
     
-            <div class="travel-gallery">
-                <h3>Nossas Jornadas</h3>
+            <section class="travel-gallery" aria-labelledby="jornadas-title">
+                <h2 id="jornadas-title">Nossas Jornadas</h2>
                 <p>Alguns momentos especiais que vivemos durante nossas viagens pelo mundo.</p>
                 
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="Resources/toquio.jpg" alt="Imagem da cidade de Tóquio, Japão com prédios altos e luzes neon">
-                        <div class="gallery-caption">Tóquio, Japão</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Resources/peru.jpg" alt="Imagem de Machu Picchu, Peru com montanhas e ruínas antigas">
-                        <div class="gallery-caption">Machu Picchu, Peru</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Resources/roma.jpg" alt="Imagem do Coliseu em Roma, Itália com céu azul ao fundo">
-                        <div class="gallery-caption">Roma, Itália</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Resources/turquia.jpg" alt="Imagem da Capadócia, Turquia com balões de ar quente no céu">
-                        <div class="gallery-caption">Capadócia, Turquia</div>
-                    </div>
+                    <figure class="gallery-item">
+                        <img src="Resources/toquio.jpg" alt="Cidade de Tóquio, Japão com prédios altos e luzes neon">
+                        <figcaption class="gallery-caption">Tóquio, Japão</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="Resources/peru.jpg" alt="Machu Picchu, Peru com montanhas e ruínas antigas">
+                        <figcaption class="gallery-caption">Machu Picchu, Peru</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="Resources/roma.jpg" alt="Coliseu em Roma, Itália com céu azul ao fundo">
+                        <figcaption class="gallery-caption">Roma, Itália</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="Resources/turquia.jpg" alt="Capadócia, Turquia com balões de ar quente no céu">
+                        <figcaption class="gallery-caption">Capadócia, Turquia</figcaption>
+                    </figure>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
-
-
-
   </main>
 
-    <footer> 
-      <div class="footer-container">
+  <footer> 
+    <div class="footer-container">
+    
+      <div class="footer-info">
+        <h2>Endereço</h2>
+          <p> R. Itajubá, 673 - Portão, Curitiba - PR, 81070-190</p>
+        </div>
+
+      <div class="logo-site">
+       <img src="Resources/logo.png" alt="Avião circulando o mundo com a frase: Turismo todo dia">
+      </div>
+      <div class="footer-info">
+      <h2>Contatos</h2>
+        <p>Entre em contato:</p> <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
+        <p>Telefone: <a href="tel:+5541999999999">(41) 99999-9999</a></p>
+        <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
+      </div>
+
       
-        <div class="footer-info">
-          <h2>Endereço</h2>
-            <p>Entre em contato:</p> <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
-            <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-            <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
-          </div>
 
-        <div class="logo-site">
-         <img src="Resources/logo.png" alt="Avião circulando o mundo com a frase: Turismo todo di">
+      <div class="links-social-container">
+        <div class="footer-links">
+          <nav>
+            <a href="comida.html">Culinaria</a>
+            <a href="paises.html">Países</a>
+            <a href="aboutus.html">Sobre Nós</a>
+          </nav>
         </div>
-        <div class="footer-info">
-        <h2>Contatos</h2>
-          <p>Entre em contato:</p> <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
-          <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-          <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
-        </div>
-
-        
-
-        <div class="links-social-container">
-          <div class="footer-links">
-            <nav>
-              <a href="#">Culinaria</a>
-              <a href="#">Pontos Turísticos</a>
-              <a href="#">Dicas</a>
-              <a href="#">Sobre Nós</a>
-            </nav>
+        <h5>Nossas Redes Sociais</h5>
+        <div class="footer-social">
+          <div class="logo">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="Resources/facebook-icon.png" alt="Logo do Facebook sendo este um Facebook com fundo azul e letras brancas">
+            </a>
           </div>
-          <h5>Nossas Redes Sociais</h5>
-
-          <div class="footer-social">
-            <div class="logo">
-              <a href="https://www.facebook.com" target="_blank">
-                <img src="Resources/facebook-icon.png" alt="Logo do Facebook sendo este um Facebook com fundo azul e letras brancas">
-              </a>
-            </div>
-            <div class="logo">
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="Resources/instagram-icon.png" alt="Logo do Instagram sendo este uma câmera com fundo rosa e letras brancas">
-              </a>
-            </div>
-            <div class="logo">
-              <a href="https://www.twitter.com" target="_blank">
-                <img src="Resources/twitter-icon.png" alt="Logo do Twitter sendo este um passarinho com fundo azul e letras brancas">
-              </a>
-            </div>
-            
+          <div class="logo">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="Resources/instagram-icon.png" alt="Logo do Instagram sendo este uma câmera com fundo rosa e letras brancas">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="Resources/twitter-icon.png" alt="Logo do Twitter sendo este um passarinho com fundo azul e letras brancas">
+            </a>
           </div>
           
-      </div>
+        </div>
+        
     </div>
-    </footer> 
+  </div>
+  </footer>
 </body>
-
 </html>
