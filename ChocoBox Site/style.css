@@ -344,6 +344,8 @@ figure img {
     margin: 10px 0;
 }
 
+
+
 .news-card-container {
     display: flex;
     flex-direction: column;
@@ -669,6 +671,8 @@ h1 {
     image-rendering: pixelated;
     /* Melhora a qualidade da imagem */
 }
+
+
 
 .descricao-gastronomia {
     flex: 1;
