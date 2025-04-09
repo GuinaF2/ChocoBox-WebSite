@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-p{
+p {
     font-size: 1.1rem;
 }
 
-
-h1{
+h1 {
     font-size: 2.1rem;
     color: #333;
 }
 
-h2{
+h2 {
     font-size: 1.9rem;
     color: #333;
 }
-h3{
+
+h3 {
     font-size: 1.7rem;
     color: #333;
 }
-h4{
+
+h4 {
     font-size: 1.5rem;
     color: #333;
 }
-h5{
+
+h5 {
     font-size: 1.3rem;
     color: #333;
 }
-
-
 
 body {
     width: 100%;
@@ -44,6 +43,7 @@ body {
 }
 
 main {
+    overflow-x: hidden;
     width: 95%;
     padding: 15px;
     overflow: auto;
@@ -124,8 +124,7 @@ header .menu {
     gap: 3rem;
 }
 
-header .menu h2{
-
+header .menu h2 {
     color: #3f392c;
 }
 
@@ -350,18 +349,204 @@ figure img {
     border-radius: 8px;
     width: 100%;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
 
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #4CAF50;
+}
+
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.country-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.country-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.country-info {
+    padding: 15px;
+}
+
+.country-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.flag {
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.country-capital {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.country-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0 0;
+    line-height: 1.4;
+}
+
+.no-results {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    display: none;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 15px;
+}
+
+.food-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.food-price {
+    font-size: 1.1rem;
+    color: #e63946;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.rating {
+    display: flex;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover, .star.active {
+    color: #ffc107;
+}
+
+.rating-value {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #555;
+}
 
 .news-card {
     display: flex;
-    flex:1;
+    flex: 1;
     margin: 2px;
     overflow: hidden;
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #e1e5e0 ;
+    background-color: #e1e5e0;
     padding: 15px;
     height: 50%;
     width: 100%;
@@ -546,8 +731,6 @@ figure img {
 
 /*fim teste*/
 
-
-
 .orcamento-redirect {
     display: flex;
     text-align: center;
@@ -568,18 +751,14 @@ figure img {
     border-radius: 0.3125rem;
     background-color: #f9f9f9;
     transition: background-color 0.3s, color 0.3s;
-    
 }
 
-.orcamento-redirect a:hover{
-
+.orcamento-redirect a:hover {
     text-decoration: none;
     font-size: 1rem;
     color: black;
     background-color: #aeaeae;
 }
-
-
 
 footer {
     width: 100%;
@@ -782,6 +961,7 @@ iframe {
     max-width: fit-content;
     max-height: fit-content;
 }
+
 .map-pais {
     display: flex;
     /* Usa Flexbox para organizar os elementos */
@@ -799,7 +979,9 @@ iframe {
     /* Sombra ao redor do contêiner */
 }
 
+
 /* Estilos do formulário */
+
 .formulario {
     max-width: 800px;
     margin: 0 auto;
@@ -900,7 +1082,9 @@ input[type="reset"]:hover {
     background-color: #7f8c8d;
 }
 
+
 /* Modal de confirmação */
+
 .modal {
     display: none;
     position: fixed;
@@ -934,7 +1118,9 @@ input[type="reset"]:hover {
     line-height: 1.6;
 }
 
+
 /* Validação visual */
+
 input.invalid {
     border-color: #e74c3c;
 }
@@ -1036,7 +1222,6 @@ input.valid {
         align-items: center;
         gap: 10px;
         background-color: transparent;
-
         /* Centraliza os elementos horizontalmente */
         padding: 20px;
         /* Espaçamento interno */
