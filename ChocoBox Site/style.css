@@ -254,7 +254,7 @@ figure img {
 }
 
 .vendas-form textarea {
-    min-height: 100px;
+    min-height: 50px;
     resize: vertical;
 }
 
@@ -752,6 +752,7 @@ h1 {
     border-radius: 10px;
     /* Bordas arredondadas */
     overflow: hidden;
+    
     /* Esconde partes das imagens fora do contêiner */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Adiciona sombra */
