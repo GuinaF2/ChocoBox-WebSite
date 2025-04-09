@@ -119,3 +119,169 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Elementos do formulário
+    const formOrcamento = document.getElementById('form-orcamento');
+    const btnEnviar = document.getElementById('btn-enviar');
+    const modal = document.getElementById('modal-confirmacao');
+    const spanFechar = document.querySelector('.modal .fechar');
+    const btnConfirmar = document.getElementById('btn-confirmar');
+
+    // Validação em tempo real para campos de entrada
+    formOrcamento.querySelectorAll('input, select, textarea').forEach(campo => {
+        campo.addEventListener('blur', function() {
+            validarCampo(this);
+        });
+    });
+
+    // Validação ao enviar
+    btnEnviar.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Valida todos os campos
+        const campos = formOrcamento.querySelectorAll('input, select, textarea');
+        let formularioValido = true;
+        
+        campos.forEach(campo => {
+            if (!validarCampo(campo)) {
+                formularioValido = false;
+            }
+        });
+
+        if (formularioValido) {
+            modal.style.display = 'block';
+        } else {
+            alert('Por favor, preencha todos os campos corretamente antes de enviar.');
+        }
+    });
+
+    // Fechar modal
+    spanFechar.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Confirmar envio
+    btnConfirmar.addEventListener('click', function() {
+        enviarOrcamento();
+    });
+
+    // Função para validar um campo individual
+    function validarCampo(campo) {
+        const valor = campo.value.trim();
+        const errorSpan = campo.nextElementSibling; // Assume que o span de erro vem logo após o campo
+        let valido = true;
+
+        // Limpa mensagens anteriores
+        if (errorSpan && errorSpan.classList.contains('error-message')) {
+            errorSpan.textContent = '';
+            campo.classList.remove('campo-invalido');
+        }
+
+        // Validações específicas por campo
+        switch(campo.id) {
+            case 'nome':
+                if (valor.length < 3) {
+                    mostrarErro(campo, errorSpan, 'Nome deve ter pelo menos 3 caracteres');
+                    valido = false;
+                }
+                break;
+                
+            case 'email':
+                if (!validarEmail(valor)) {
+                    mostrarErro(campo, errorSpan, 'Por favor, insira um e-mail válido');
+                    valido = false;
+                }
+                break;
+                
+            case 'telefone':
+                if (!validarTelefone(valor)) {
+                    mostrarErro(campo, errorSpan, 'Por favor, insira um telefone válido');
+                    valido = false;
+                }
+                break;
+                
+            case 'servico':
+                if (valor === '') {
+                    mostrarErro(campo, errorSpan, 'Por favor, selecione um serviço');
+                    valido = false;
+                }
+                break;
+                
+            case 'descricao':
+                if (valor.length < 10) {
+                    mostrarErro(campo, errorSpan, 'Descrição deve ter pelo menos 10 caracteres');
+                    valido = false;
+                }
+                break;
+                
+            case 'prazo':
+                if (!validarPrazo(valor)) {
+                    mostrarErro(campo, errorSpan, 'Por favor, insira uma data futura no formato DD/MM/AAAA');
+                    valido = false;
+                }
+                break;
+        }
+
+        return valido;
+    }
+
+    // Mostra mensagem de erro
+    function mostrarErro(campo, errorSpan, mensagem) {
+        if (errorSpan && errorSpan.classList.contains('error-message')) {
+            errorSpan.textContent = mensagem;
+            campo.classList.add('campo-invalido');
+        }
+    }
+
+    // Valida formato de e-mail
+    function validarEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // Valida formato de telefone brasileiro
+    function validarTelefone(telefone) {
+        const re = /^\(?\d{2}\)?[\s-]?\d{4,5}[\s-]?\d{4}$/;
+        return re.test(telefone);
+    }
+
+    // Valida data (formato DD/MM/AAAA e deve ser futura)
+    function validarPrazo(prazo) {
+        const re = /^\d{2}\/\d{2}\/\d{4}$/;
+        if (!re.test(prazo)) return false;
+        
+        const partes = prazo.split('/');
+        const dia = parseInt(partes[0], 10);
+        const mes = parseInt(partes[1], 10) - 1;
+        const ano = parseInt(partes[2], 10);
+        const data = new Date(ano, mes, dia);
+        
+        return data.getDate() === dia && 
+               data.getMonth() === mes && 
+               data.getFullYear() === ano &&
+               data > new Date();
+    }
+
+    // Simula o envio do formulário
+    function enviarOrcamento() {
+        // Coleta os dados do formulário
+        const dados = {
+            nome: document.getElementById('nome').value,
+            email: document.getElementById('email').value,
+            telefone: document.getElementById('telefone').value,
+            servico: document.getElementById('servico').value,
+            descricao: document.getElementById('descricao').value,
+            prazo: document.getElementById('prazo').value
+        };
+
+        // Aqui você pode adicionar uma chamada AJAX para enviar os dados
+        console.log('Dados do orçamento:', dados);
+        
+        // Feedback ao usuário
+        modal.style.display = 'none';
+        formOrcamento.reset();
+        
+        alert('Orçamento enviado com sucesso! Entraremos em contato em breve.');
+    }
+});
