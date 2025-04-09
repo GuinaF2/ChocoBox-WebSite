@@ -2,11 +2,13 @@
 <html lang="pt-BR">
   
 <head> 
-  <meta charset = "UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra pratos internacionais deliciosos de diferentes países com avaliações e preços">
   <link rel="stylesheet" href="style.css">
-  <title> Comidas </title>
-  <link rel="icon" type="icon-title" href="Resources/logo.png">
-  <script src="script.js"></script>
+  <title>Pratos Internacionais | Viagem Pelo Mundo</title>
+  <link rel="icon" href="Resources/logo.png">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,11 +18,13 @@
         <a href="index.html"><img src="Resources/logo.png" alt="Avião circulando o mundo com a frase: Turismo todo dia"></a>
       </div>
 
-      <nav class="menu">
-        <div class="otherpages"><a href="comida.html"><h2>Culinária</h2></a></div>
-        <div class="otherpages"><a href="aboutus.html"><h2>Sobre Nós</h2></a></div>
-        <div class="otherpages"><a href="paises.html"><h2>Países</h2></a></div>
-        <div class="otherpages"><a href="tips.html"><h2>Dicas</h2></a></div>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li class="otherpages"><a href="comida.html" aria-current="page">Culinária</a></li>
+          <li class="otherpages"><a href="aboutus.html">Sobre Nós</a></li>
+          <li class="otherpages"><a href="paises.html">Países</a></li>
+          <li class="otherpages"><a href="tips.html">Dicas</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -28,244 +32,243 @@
   <main>
     <h1>Pratos Internacionais</h1>
     
-    <div class="food-container">
+    <section class="food-container" aria-label="Cardápio de pratos internacionais">
         <!-- Item 1 - Itália -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pizza Margherita" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pizza Margherita italiana com queijo derretido, manjericão fresco e molho de tomate" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Pizza Margherita</h3>
-                    <img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália com as cores na ordem verde, branca e vermelha" class="flag">
+                    <h2 class="food-name">Pizza Margherita</h2>
+                    <img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália" class="flag">
                 </div>
                 <div class="food-price">R$ 42,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 2 - Japão -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Sushi" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Sushi variado com peixe fresco, arroz e wasabi" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Sushi Variado</h3>
-                    <img src="https://flagcdn.com/w40/jp.png" alt="Bandeira do Japão, um fundo em branco com uma bola vermelha no centro" class="flag">
+                    <h2 class="food-name">Sushi Variado</h2>
+                    <img src="https://flagcdn.com/w40/jp.png" alt="Bandeira do Japão" class="flag">
                 </div>
                 <div class="food-price">R$ 58,50</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 3 - México -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tacos" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tacos mexicanos com carne, cebola, coentro e molho" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Tacos Mexicanos</h3>
+                    <h2 class="food-name">Tacos Mexicanos</h2>
                     <img src="https://flagcdn.com/w40/mx.png" alt="Bandeira do México" class="flag">
                 </div>
                 <div class="food-price">R$ 34,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 4 - França -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ratatouille" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ratatouille francês com legumes assados" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Ratatouille</h3>
+                    <h2 class="food-name">Ratatouille</h2>
                     <img src="https://flagcdn.com/w40/fr.png" alt="Bandeira da França" class="flag">
                 </div>
                 <div class="food-price">R$ 47,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 5 - Índia -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Butter Chicken" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Butter Chicken indiano com molho cremoso" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Butter Chicken</h3>
+                    <h2 class="food-name">Butter Chicken</h2>
                     <img src="https://flagcdn.com/w40/in.png" alt="Bandeira da Índia" class="flag">
                 </div>
                 <div class="food-price">R$ 39,50</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 6 - Brasil -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Feijoada" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Feijoada brasileira com arroz, couve e farofa" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Feijoada</h3>
+                    <h2 class="food-name">Feijoada</h2>
                     <img src="https://flagcdn.com/w40/br.png" alt="Bandeira do Brasil" class="flag">
                 </div>
                 <div class="food-price">R$ 35,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 7 - Tailândia -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pad Thai" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pad Thai tailandês com camarões e amendoim" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Pad Thai</h3>
+                    <h2 class="food-name">Pad Thai</h2>
                     <img src="https://flagcdn.com/w40/th.png" alt="Bandeira da Tailândia" class="flag">
                 </div>
                 <div class="food-price">R$ 32,50</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 8 - Estados Unidos -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Hambúrguer" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Hambúrguer americano com queijo, alface e tomate" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Hambúrguer Clássico</h3>
-                    <img src="https://flagcdn.com/w40/us.png" alt="Bandeira dos EUA" class="flag">
+                    <h2 class="food-name">Hambúrguer Clássico</h2>
+                    <img src="https://flagcdn.com/w40/us.png" alt="Bandeira dos Estados Unidos" class="flag">
                 </div>
                 <div class="food-price">R$ 29,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
+        </article>
         
         <!-- Item 9 - China -->
-        <div class="food-card">
-            <img src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pato à Pequim" class="food-image">
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pato à Pequim chinês com pele crocante" class="food-image">
             <div class="food-info">
                 <div class="food-header">
-                    <h3 class="food-name">Pato à Pequim</h3>
+                    <h2 class="food-name">Pato à Pequim</h2>
                     <img src="https://flagcdn.com/w40/cn.png" alt="Bandeira da China" class="flag">
                 </div>
                 <div class="food-price">R$ 65,90</div>
-                <div class="rating" data-rating="0">
-                    <span class="star" data-value="1">★</span>
-                    <span class="star" data-value="2">★</span>
-                    <span class="star" data-value="3">★</span>
-                    <span class="star" data-value="4">★</span>
-                    <span class="star" data-value="5">★</span>
+                <div class="rating" data-rating="0" role="img" aria-label="Avaliação: 0 estrelas de 5">
+                    <span class="star" data-value="1" role="button" aria-label="1 estrela">★</span>
+                    <span class="star" data-value="2" role="button" aria-label="2 estrelas">★</span>
+                    <span class="star" data-value="3" role="button" aria-label="3 estrelas">★</span>
+                    <span class="star" data-value="4" role="button" aria-label="4 estrelas">★</span>
+                    <span class="star" data-value="5" role="button" aria-label="5 estrelas">★</span>
                     <span class="rating-value">0/5</span>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
   </main>
 
-    <footer> 
-      <div class="footer-container">
-      
-        <div class="footer-info">
-          <h2>Endereço</h2>
-            <p>Entre em contato:</p> <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
-            <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-            <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
-          </div>
+  <footer> 
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>Endereço</h2>
+        <address>
+          Rua das Viagens, 123<br>
+          São Paulo - SP<br>
+          CEP: 01234-567
+        </address>
+      </div>
 
-        <div class="logo-site">
-         <img src="Resources/logo.png" alt="Avião circulando o mundo com a frase: Turismo todo di">
-        </div>
-        <div class="footer-info">
+      <div class="logo-site">
+        <img src="Resources/logo.png" alt="Avião circulando o mundo com a frase: Turismo todo dia">
+      </div>
+
+      <div class="footer-info">
         <h2>Contatos</h2>
-          <p>Entre em contato:</p> <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
-          <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-          <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
+        <p>Entre em contato: <a href="mailto:contato@viagempelomundo.com">contato@viagempelomundo.com</a></p>
+        <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+      </div>
+
+      <div class="links-social-container">
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <nav aria-label="Links do rodapé">
+            <ul>
+              <li><a href="comida.html">Culinária</a></li>
+              <li><a href="paises.html">Países</a></li>
+              <li><a href="tips.html">Dicas</a></li>
+              <li><a href="aboutus.html">Sobre Nós</a></li>
+            </ul>
+          </nav>
         </div>
-
         
-
-        <div class="links-social-container">
-          <div class="footer-links">
-            <nav>
-              <a href="#">Culinaria</a>
-              <a href="#">Pontos Turísticos</a>
-              <a href="#">Dicas</a>
-              <a href="#">Sobre Nós</a>
-            </nav>
+        <div class="footer-social">
+          <h3>Nossas Redes Sociais</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="Resources/facebook-icon.png" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="Resources/instagram-icon.png" alt="Logo do Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="Resources/twitter-icon.png" alt="Logo do Twitter">
+            </a>
           </div>
-          <h5>Nossas Redes Sociais</h5>
-
-          <div class="footer-social">
-            <div class="logo">
-              <a href="https://www.facebook.com" target="_blank">
-                <img src="Resources/facebook-icon.png" alt="Logo do Facebook sendo este um Facebook com fundo azul e letras brancas">
-              </a>
-            </div>
-            <div class="logo">
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="Resources/instagram-icon.png" alt="Logo do Instagram sendo este uma câmera com fundo rosa e letras brancas">
-              </a>
-            </div>
-            <div class="logo">
-              <a href="https://www.twitter.com" target="_blank">
-                <img src="Resources/twitter-icon.png" alt="Logo do Twitter sendo este um passarinho com fundo azul e letras brancas">
-              </a>
-            </div>
-            
-          </div>
-          
+        </div>
       </div>
     </div>
-    </footer> 
+    
+    <div class="copyright">
+      <p>&copy; 2025 Viagem Pelo Mundo. Todos os direitos reservados.</p>
+    </div>
+  </footer> 
 </body>
-
 </html>
