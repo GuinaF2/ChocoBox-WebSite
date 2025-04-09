@@ -614,11 +614,7 @@ h1 {
 
 .descricao1 {
     flex: 1;
-    justify-content: flex-start;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 3.5rem;
-    /* Tamanho da fonte */
-    line-height: 1.7;
     /* Altura da linha para melhor legibilidade */
     color: #282b1d;
     /* Cor do texto */
@@ -937,15 +933,6 @@ footer .footer-social {
     margin: 0;
 }
 
-.descricao1 {
-    font-size: 1.25rem;
-    /* Tamanho da fonte */
-    line-height: 1.6;
-    /* Altura da linha para melhor legibilidade */
-    color: #8e9481;
-    /* Cor do texto */
-    text-align: justify;
-}
 
 .banner {
     flex-direction: row;
@@ -1717,9 +1704,7 @@ input.valid {
     flex: 1;
     justify-content: flex-start;
     /* Faz o texto ocupar o espaço restante */
-    font-size: 1.8rem;
-    /* Tamanho da fonte */
-    line-height: 1.0;
+   
     /* Altura da linha para melhor legibilidade */
     color: #282b1d;
     /* Cor do texto */
