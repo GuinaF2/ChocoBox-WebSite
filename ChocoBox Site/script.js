@@ -120,6 +120,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const formVendas = document.querySelector('.vendas-form');
     
