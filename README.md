@@ -1,68 +1,52 @@
-# Projeto Front-End
+# Travel Blog
 
----
+This project is a responsive website built with advanced principles of HTML5 and CSS3 besides basic JavaScript, and hosted via GitHub Pages. It simulates a travel blog with a focus on modern design, usability, and accessibility.
 
-## Funcionalidades Implementadas
+## 🌐 Live Demo
 
-- **Navegação intuitiva** com cabeçalho fixo e menu responsivo.
-- **Formulário de contato** com validação em tempo real via JavaScript.
-- **Manipulação de elementos do DOM** (ex: exibição dinâmica de seções, cards, ou mensagens).
-- **Animações suaves** com efeitos de rolagem e transições visuais.
-- **Design responsivo** adaptado para diferentes dispositivos: desktop, tablet e mobile.
-- **Acessibilidade web**: texto alternativo para imagens, estrutura semântica correta, contraste adequado, navegação via teclado.
+View the live site here:
 
----
+[https://guinaf2.github.io/Travel-Blog/](https://guinaf2.github.io/Travel-Blog/)
 
+## Project Structure
 
-## Tecnologias Utilizadas
+- `index.html`: Main HTML page of the site.
+- `style.css`: Custom styles for layout and responsiveness.
+- `script.js`: JavaScript code for interactivity and DOM manipulation.
+- `README.md`: This file with project details and instructions.
 
-### HTML5
-- Uso de **tags semânticas** como `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`.
-- **Formulários completos** com `<form>`, `<input>`, `<textarea>`, `<select>`, e `<button>`.
-- Código validado pelo [W3C Markup Validation Service](https://validator.w3.org/).
+## How to Run Locally
 
-### CSS3
-- Estilização completa: **cores, fontes, layout, espaçamento e animações**.
-- Layout feito com **Flexbox e Grid**, respeitando o conceito de **Mobile First**.
-- **Media Queries** para adaptar o conteúdo a diferentes resoluções.
-- Organização do código CSS em **arquivo externo** (`style.css`), com nomes de classes seguindo a metodologia **BEM**.
-- Validação feita com o [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+1. Clone the repository:
 
-### JavaScript
-- Código organizado em arquivo externo: `script.js`.
-- Funcionalidades implementadas:
-  - Validação de formulário com mensagens de erro personalizadas.
-  - Manipulação do DOM: exibição dinâmica de conteúdo e interações com o usuário.
-  - Animações e transições suaves.
-  - Consumo de API externa via `fetch` com tratamento de erros.
-- Uso de **boas práticas**: funções bem definidas, nomes descritivos, código comentado e modular.
+   ```bash
+   git clone https://github.com/GuinaF2/Travel-Blog.git
+   cd Travel-Blog
+   ```
 
----
+2. Open the `index.html` file in your web browser.
 
-## Acessibilidade
+   You can either double-click the file or use a local server for a better experience.
 
-- Texto alternativo (`alt`) em todas as imagens.
-- Contraste adequado entre texto e plano de fundo.
-- Site navegável por **teclado (Tab, Enter)**.
-- Estrutura HTML respeita a hierarquia de títulos e seções.
+## Technologies Used
 
----
+- **HTML5**: Semantic structure using tags like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`.
+- **CSS3**: Styling with a focus on responsiveness using media queries and flexbox.
+- **JavaScript**: DOM manipulation for interactivity, such as form validation and scroll effects.
 
-## Responsividade
+## Responsiveness
 
-- Layout adaptado para:
-  - **Desktops (≥ 1024px)**
-  - **Tablets (768px – 1023px)**
-  - **Celulares (≤ 767px)**
-- Testado em múltiplos navegadores e dispositivos.
+The site is fully responsive and adapts to different screen sizes including desktops, tablets, and mobile devices.
 
----
+## Accessibility
 
-## Performance
+Accessibility best practices have been implemented, including:
 
-- Imagens otimizadas com compressão sem perda de qualidade.
-- Minificação de arquivos CSS e JS, quando necessário.
-- Carregamento rápido com estrutura leve e eficiente.
+- Use of alt text for images.
+- Proper semantic structure.
+- Sufficient contrast between text and background.
+- Keyboard navigation support.
 
----
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
