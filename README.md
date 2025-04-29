@@ -1,6 +1,6 @@
 # Travel Blog
 
-This project is a responsive website built with HTML5, CSS3, and JavaScript, and hosted via GitHub Pages. It simulates a travel blog with a focus on modern design, usability, and accessibility.
+This project is a responsive website built with advanced principles of HTML5 and CSS3 besides basic JavaScript, and hosted via GitHub Pages. It simulates a travel blog with a focus on modern design, usability, and accessibility.
 
 ## 🌐 Live Demo
 
