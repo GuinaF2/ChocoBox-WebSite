@@ -1166,6 +1166,7 @@ input.valid {
         flex-direction: row;
         order: 1;
         width: 100%;
+        font-size: 0.2rem;
     }
     .news-card-mainpage,
     .news-card-container {
